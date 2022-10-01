@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "has_route_assigned": {
+      "type": "boolean"
+    },
+    "warehouse_location_id": {
+      "type": "string"
+    },
+    "fc_company": {
+      "type": "string"
+    },
+    "model_type": {
+      "type": "string"
+    },
+    "fc_id": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "has_route_assigned",
+    "warehouse_location_id",
+    "fc_company",
+    "model_type",
+    "fc_id"
+  ]
+}

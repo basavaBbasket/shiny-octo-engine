@@ -1,0 +1,43 @@
+{
+
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "alert_config": {
+      "type": "array",
+      "properties": {
+        "tag": {
+          "type": "string"
+        },
+        "threshold": {
+          "type": "integer"
+        },
+        "description": {
+          "type": "string"
+        },
+        "sla_in_mins": {
+          "type": "integer"
+        },
+        "active_duration_in_mins": {
+          "type": "integer"
+        }
+      }
+    },
+
+    "configuration_settings": {
+      "type": "array",
+      "properties": {
+        "key": {
+          "type": "string"
+        },
+        "configuration": {
+          "type": "object"
+        }
+      }
+    }
+  },
+  "required": [
+    "alert_config",
+    "configuration_settings"
+  ]
+}

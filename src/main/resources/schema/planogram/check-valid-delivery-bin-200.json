@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string"
+    },
+    "machineID": {
+      "type": "string"
+    },
+    "doorname": {
+      "type": "string"
+    },
+    "order_id": {
+      "type": "string"
+    },
+    "is_occupied": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "status",
+    "mode",
+    "machineID",
+    "doorname",
+    "order_id",
+    "is_occupied"
+  ]
+}

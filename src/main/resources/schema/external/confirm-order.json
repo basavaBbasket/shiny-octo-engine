@@ -1,0 +1,76 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "status",
+    "message",
+    "response"
+  ],
+  "properties": {
+    "status": {
+      "type": "integer",
+      "title": "The Status Schema",
+      "default": 0
+    },
+    "message": {
+      "type": "string",
+      "title": "The Message Schema",
+      "default": "",
+      "pattern": "^(.*)$"
+    },
+    "response": {
+      "type": "object",
+      "title": "The Response Schema",
+      "required": [
+        "orders"
+      ],
+      "properties": {
+        "orders": {
+          "type": "array",
+          "title": "The Orders Schema",
+          "items": {
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "order_id",
+              "xfulfillment_id",
+              "modifications",
+              "order_number",
+              "xorderid"
+            ],
+            "properties": {
+              "order_id": {
+                "type": "integer",
+                "title": "The Order_id Schema",
+                "default": 0
+              },
+              "xfulfillment_id": {
+                "type": "integer",
+                "title": "The Xfulfillment_id Schema",
+                "default": 0
+              },
+              "modifications": {
+                "type": "object",
+                "title": "The Modifications Schema"
+              },
+              "order_number": {
+                "type": "string",
+                "title": "The Order_number Schema",
+                "default": "",
+                "pattern": "^(.*)$"
+              },
+              "xorderid": {
+                "type": "integer",
+                "title": "The Xorderid Schema",
+                "default": 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

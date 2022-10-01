@@ -1,0 +1,38 @@
+[
+  {
+    "sku_id": 40003225,
+    "sa_id": 1,
+    "fc_id": 213,
+    "path_id": 2,
+    "src_fc": 213,
+    "dest_fc": 213,
+    "path_type": 1
+  },
+  {
+    "sku_id": 40073724,
+    "sa_id": 1,
+    "fc_id": 213,
+    "path_id": 2,
+    "src_fc": 213,
+    "dest_fc": 213,
+    "path_type": 1
+  },
+  {
+    "sku_id": 40196572,
+    "sa_id": 1,
+    "fc_id": 213,
+    "path_id": 2,
+    "src_fc": 213,
+    "dest_fc": 213,
+    "path_type": 1
+  },
+  {
+    "sku_id": 10000148,
+    "sa_id":1,
+    "fc_id": 200,
+    "path_id": 5,
+    "src_fc": 200,
+    "dest_fc": 213,
+    "path_type": 6
+  }
+]

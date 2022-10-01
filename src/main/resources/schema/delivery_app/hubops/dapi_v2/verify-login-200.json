@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "mesg": {
+      "type": "string"
+    },
+    "login_time": {
+      "type": "string"
+    },
+    "is_gps_enabled": {
+      "type": "boolean"
+    },
+    "cee_id": {
+      "type": "string"
+    },
+    "enable_i_m_here": {
+      "type": "boolean"
+    },
+    "access_token": {
+      "type": "string"
+    },
+    "refresh_token": {
+      "type": "string"
+    },
+    "cee_name": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "mesg",
+    "login_time",
+    "is_gps_enabled",
+    "cee_id",
+    "enable_i_m_here",
+    "access_token",
+    "refresh_token",
+    "cee_name"
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "fc_id": {
+          "type": "integer"
+        },
+        "source_fc_id": {
+          "type": "integer"
+        },
+        "request_type": {
+          "type": "string"
+        },
+        "request_id": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "order_id": {
+          "type": "integer"
+        },
+        "order_type": {
+          "type": "string"
+        },
+        "created_by": {
+          "type": "string"
+        },
+        "created_on": {
+          "type": "string"
+        },
+        "updated_on": {
+          "type": "string"
+        },
+        "updated_by": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "fc_id",
+        "source_fc_id",
+        "request_type",
+        "request_id",
+        "status",
+        "order_id",
+        "order_type",
+        "created_by",
+        "created_on",
+        "updated_on",
+        "updated_by"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "fc_id": {
+          "type": "integer"
+        },
+        "source_fc_id": {
+          "type": "integer"
+        },
+        "request_type": {
+          "type": "string"
+        },
+        "request_id": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "order_id": {
+          "type": "integer"
+        },
+        "order_type": {
+          "type": "string"
+        },
+        "created_by": {
+          "type": "string"
+        },
+        "created_on": {
+          "type": "string"
+        },
+        "updated_on": {
+          "type": "string"
+        },
+        "updated_by": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "fc_id",
+        "source_fc_id",
+        "request_type",
+        "request_id",
+        "status",
+        "order_id",
+        "order_type",
+        "created_by",
+        "created_on",
+        "updated_on",
+        "updated_by"
+      ]
+    }
+  ]
+}
