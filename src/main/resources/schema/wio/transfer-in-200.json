@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "ti_id": {
+      "type": "integer"
+    },
+    "fc_id": {
+      "type": "integer"
+    },
+    "request_type": {
+      "type": "string"
+    },
+    "loose_quantity_info": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "sku": {
+              "type": "integer"
+            },
+            "quantity": {
+              "type": "integer"
+            },
+            "cost_price": {
+              "type": "number"
+            },
+            "mrp": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "sku",
+            "quantity",
+            "cost_price",
+            "mrp"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "ti_id",
+    "fc_id",
+    "request_type",
+    "loose_quantity_info"
+  ]
+}

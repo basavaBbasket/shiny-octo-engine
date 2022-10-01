@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "member_type": {
+      "type": "string"
+    },
+    "member_type_id": {
+      "type": "integer"
+    },
+    "source_id": {
+      "type": "integer"
+    },
+    "email": {
+      "type": "string"
+    },
+    "mobile_no": {
+      "type": "string"
+    },
+    "customer_hash": {
+      "type": "string"
+    },
+    "city_id": {
+      "type": "integer"
+    },
+    "is_loyal": {
+      "type": "boolean"
+    },
+    "phone_no": {
+      "type": "null"
+    },
+    "is_vip": {
+      "type": "boolean"
+    },
+    "language_id": {
+      "type": "integer"
+    },
+    "ec_ids": {
+      "type": "array",
+      "items": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "integer"
+        },
+        {
+          "type": "integer"
+        },
+        {
+          "type": "integer"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    "is_multicity_enabled": {
+      "type": "boolean"
+    },
+    "is_institutional": {
+      "type": "boolean"
+    },
+    "is_kirana": {
+      "type": "boolean"
+    },
+    "full_name": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "first_name",
+    "last_name",
+    "member_type",
+    "member_type_id",
+    "source_id",
+    "email",
+    "mobile_no",
+    "customer_hash",
+    "city_id",
+    "is_loyal",
+    "phone_no",
+    "is_vip",
+    "language_id",
+    "ec_ids",
+    "is_multicity_enabled",
+    "is_institutional",
+    "is_kirana",
+    "full_name"
+  ]
+}

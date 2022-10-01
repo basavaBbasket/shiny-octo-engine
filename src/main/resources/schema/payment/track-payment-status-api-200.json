@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "response": {
+      "type": "object",
+      "properties": {
+        "additional_payment_info": {
+          "type": "object",
+          "properties": {
+            "message": {
+              "type": "string"
+            },
+            "send_communication": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "message",
+            "send_communication"
+          ]
+        },
+        "app_version": {
+          "type": "string"
+        },
+        "channel": {
+          "type": "string"
+        },
+        "device": {
+          "type": "string"
+        },
+        "discount": {
+          "type": "integer"
+        },
+        "payment_method": {
+          "type": "string"
+        },
+        "payment_status": {
+          "type": "string"
+        },
+        "purchased_txn_list": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "status_at_source": {
+          "type": "string"
+        },
+        "txn_type": {
+          "type": "string"
+        },
+        "pollint_interval": {
+          "type": "integer"
+        },
+        "polling_timeout": {
+          "type": "integer"
+        },
+        "validate_payment_message": {
+          "type": "string"
+        },
+        "validate_payment_title": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "additional_payment_info",
+        "app_version",
+        "channel",
+        "device",
+        "discount",
+        "payment_method",
+        "payment_status",
+        "purchased_txn_list",
+        "status_at_source",
+        "txn_type",
+        "pollint_interval",
+        "polling_timeout",
+        "validate_payment_message",
+        "validate_payment_title"
+      ]
+    },
+    "status": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "message",
+    "response",
+    "status"
+  ]
+}

@@ -1,0 +1,675 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "selected_address_id": {
+      "type": "string"
+    },
+    "sa_list": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "sa_id": {
+              "type": "integer"
+            },
+            "dms": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "entry_context_ids": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "sa_id",
+            "dms",
+            "entry_context_ids"
+          ]
+        }
+      ]
+    },
+    "bb_star_membership_info": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string"
+        },
+        "msg": {
+          "type": "string"
+        },
+        "is_city_bb_star_enabled": {
+          "type": "boolean"
+        },
+        "know_more_text": {
+          "type": "string"
+        },
+        "is_bb_star_member": {
+          "type": "boolean"
+        },
+        "show_priority_slot_msg": {
+          "type": "boolean"
+        },
+        "neupass_url": {
+          "type": "string"
+        },
+        "is_neupass_pilot": {
+          "type": "boolean"
+        },
+        "neupass_onboarding_url": {
+          "type": "string"
+        },
+        "neupass_query_params": {
+          "type": "object",
+          "properties": {
+            "programId": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "programId",
+            "source"
+          ]
+        },
+        "neupass_onboarding_display_count": {
+          "type": "integer"
+        },
+        "title": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "url",
+        "msg",
+        "is_city_bb_star_enabled",
+        "know_more_text",
+        "is_bb_star_member",
+        "show_priority_slot_msg",
+        "neupass_url",
+        "is_neupass_pilot",
+        "neupass_onboarding_url",
+        "neupass_query_params",
+        "neupass_onboarding_display_count",
+        "title"
+      ]
+    },
+    "special_notifications": {
+      "type": "object"
+    },
+    "ticker_info": {
+      "type": "object"
+    },
+    "additional_cookies": {
+      "type": "object",
+      "properties": {
+        "_bb_bb2.0": {
+          "type": "string"
+        },
+        "_bb_home_cache": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "_bb_bb2.0",
+        "_bb_home_cache"
+      ]
+    },
+    "addresses": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "nick": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            },
+            "lng": {
+              "type": "number"
+            },
+            "lat": {
+              "type": "number"
+            },
+            "pin": {
+              "type": "integer"
+            },
+            "address1": {
+              "type": "string"
+            },
+            "address2": {
+              "type": "string"
+            },
+            "complex": {
+              "type": "string"
+            },
+            "area": {
+              "type": "string"
+            },
+            "landmark": {
+              "type": "string"
+            },
+            "sa_city_id": {
+              "type": "integer"
+            },
+            "city_name": {
+              "type": "string"
+            },
+            "city_id": {
+              "type": "integer"
+            },
+            "first_name": {
+              "type": "string"
+            },
+            "last_name": {
+              "type": "string"
+            },
+            "bb1_backendcity_id": {
+              "type": "integer"
+            },
+            "is_current_delivery": {
+              "type": "boolean"
+            },
+            "is_partial": {
+              "type": "boolean"
+            },
+            "is_default": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "nick",
+            "id",
+            "lng",
+            "lat",
+            "pin",
+            "address1",
+            "address2",
+            "complex",
+            "area",
+            "landmark",
+            "sa_city_id",
+            "city_name",
+            "city_id",
+            "first_name",
+            "last_name",
+            "bb1_backendcity_id",
+            "is_current_delivery",
+            "is_partial",
+            "is_default"
+          ]
+        }
+      ]
+    },
+    "door_ui": {
+      "type": "object",
+      "properties": {
+        "desc": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "desc",
+        "title"
+      ]
+    },
+    "entry_context_mapping": {
+      "type": "object",
+      "properties": {
+        "4": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "display_name": {
+              "type": "string"
+            },
+            "ec_specific_icon_url": {
+              "type": "string"
+            },
+            "door_icon_url": {
+              "type": "string"
+            },
+            "door_inclusion_priority": {
+              "type": "null"
+            },
+            "app_behaviour": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "slug",
+            "display_name",
+            "ec_specific_icon_url",
+            "door_icon_url",
+            "door_inclusion_priority",
+            "app_behaviour"
+          ]
+        },
+        "8": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "display_name": {
+              "type": "string"
+            },
+            "ec_specific_icon_url": {
+              "type": "string"
+            },
+            "door_icon_url": {
+              "type": "string"
+            },
+            "door_inclusion_priority": {
+              "type": "integer"
+            },
+            "app_behaviour": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "slug",
+            "display_name",
+            "ec_specific_icon_url",
+            "door_icon_url",
+            "door_inclusion_priority",
+            "app_behaviour"
+          ]
+        },
+        "9": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "display_name": {
+              "type": "string"
+            },
+            "ec_specific_icon_url": {
+              "type": "string"
+            },
+            "door_icon_url": {
+              "type": "string"
+            },
+            "door_inclusion_priority": {
+              "type": "integer"
+            },
+            "app_behaviour": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "slug",
+            "display_name",
+            "ec_specific_icon_url",
+            "door_icon_url",
+            "door_inclusion_priority",
+            "app_behaviour"
+          ]
+        },
+        "10": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "display_name": {
+              "type": "string"
+            },
+            "ec_specific_icon_url": {
+              "type": "string"
+            },
+            "door_icon_url": {
+              "type": "string"
+            },
+            "door_inclusion_priority": {
+              "type": "integer"
+            },
+            "app_behaviour": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "slug",
+            "display_name",
+            "ec_specific_icon_url",
+            "door_icon_url",
+            "door_inclusion_priority",
+            "app_behaviour"
+          ]
+        },
+        "12": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "display_name": {
+              "type": "string"
+            },
+            "ec_specific_icon_url": {
+              "type": "string"
+            },
+            "door_icon_url": {
+              "type": "string"
+            },
+            "door_inclusion_priority": {
+              "type": "integer"
+            },
+            "app_behaviour": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "slug",
+            "display_name",
+            "ec_specific_icon_url",
+            "door_icon_url",
+            "door_inclusion_priority",
+            "app_behaviour"
+          ]
+        },
+        "13": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "display_name": {
+              "type": "string"
+            },
+            "ec_specific_icon_url": {
+              "type": "string"
+            },
+            "door_icon_url": {
+              "type": "string"
+            },
+            "door_inclusion_priority": {
+              "type": "integer"
+            },
+            "app_behaviour": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "slug",
+            "display_name",
+            "ec_specific_icon_url",
+            "door_icon_url",
+            "door_inclusion_priority",
+            "app_behaviour"
+          ]
+        },
+        "14": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "display_name": {
+              "type": "string"
+            },
+            "ec_specific_icon_url": {
+              "type": "string"
+            },
+            "door_icon_url": {
+              "type": "string"
+            },
+            "door_inclusion_priority": {
+              "type": "integer"
+            },
+            "app_behaviour": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "slug",
+            "display_name",
+            "ec_specific_icon_url",
+            "door_icon_url",
+            "door_inclusion_priority",
+            "app_behaviour"
+          ]
+        },
+        "15": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "display_name": {
+              "type": "string"
+            },
+            "ec_specific_icon_url": {
+              "type": "string"
+            },
+            "door_icon_url": {
+              "type": "string"
+            },
+            "door_inclusion_priority": {
+              "type": "integer"
+            },
+            "app_behaviour": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "slug",
+            "display_name",
+            "ec_specific_icon_url",
+            "door_icon_url",
+            "door_inclusion_priority",
+            "app_behaviour"
+          ]
+        },
+        "16": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "display_name": {
+              "type": "string"
+            },
+            "ec_specific_icon_url": {
+              "type": "string"
+            },
+            "door_icon_url": {
+              "type": "string"
+            },
+            "door_inclusion_priority": {
+              "type": "integer"
+            },
+            "app_behaviour": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "slug",
+            "display_name",
+            "ec_specific_icon_url",
+            "door_icon_url",
+            "door_inclusion_priority",
+            "app_behaviour"
+          ]
+        },
+        "100": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "display_name": {
+              "type": "string"
+            },
+            "ec_specific_icon_url": {
+              "type": "string"
+            },
+            "door_icon_url": {
+              "type": "string"
+            },
+            "door_inclusion_priority": {
+              "type": "integer"
+            },
+            "app_behaviour": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "slug",
+            "display_name",
+            "ec_specific_icon_url",
+            "door_icon_url",
+            "door_inclusion_priority",
+            "app_behaviour"
+          ]
+        }
+      },
+      "required": [
+        "4",
+        "8",
+        "9",
+        "10",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "100"
+      ]
+    },
+    "applicable_ec_doors_for_member": {
+      "type": "array",
+      "items": [
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    "next_available_slots": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "sa_id": {
+              "type": "integer"
+            },
+            "show_express": {
+              "type": "boolean"
+            },
+            "slot_start_timestamp": {
+              "type": "integer"
+            },
+            "bb_star_avail": {
+              "type": "boolean"
+            },
+            "short_eta": {
+              "type": "string"
+            },
+            "medium_eta": {
+              "type": "string"
+            },
+            "long_eta": {
+              "type": "string"
+            },
+            "slot_time": {
+              "type": "string"
+            },
+            "slots_full": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "sa_id",
+            "show_express",
+            "slot_start_timestamp",
+            "bb_star_avail",
+            "short_eta",
+            "medium_eta",
+            "long_eta",
+            "slot_time",
+            "slots_full"
+          ]
+        }
+      ]
+    },
+    "ec_doors": {
+      "type": "array",
+      "items": {}
+    }
+  },
+  "required": [
+    "selected_address_id",
+    "sa_list",
+    "bb_star_membership_info",
+    "special_notifications",
+    "ticker_info",
+    "additional_cookies",
+    "addresses",
+    "door_ui",
+    "entry_context_mapping",
+    "applicable_ec_doors_for_member",
+    "next_available_slots",
+    "ec_doors"
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer"
+        },
+        "type": {
+          "type": "string"
+        },
+        "code_str": {
+          "type": "string"
+        },
+        "msg": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "type",
+        "code_str",
+        "msg"
+      ]
+    },
+    "report": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "slug": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "string"
+        },
+        "row_count": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "name",
+        "slug",
+        "timestamp",
+        "row_count"
+      ]
+    },
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "serviceable_area_id": {
+              "type": "integer"
+            },
+            "delivery_mode_id": {
+              "type": "integer"
+            },
+            "avg_pick_time": {
+              "type": "integer"
+            },
+            "avg_road_time": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "serviceable_area_id",
+            "delivery_mode_id",
+            "avg_pick_time",
+            "avg_road_time"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "serviceable_area_id": {
+              "type": "integer"
+            },
+            "delivery_mode_id": {
+              "type": "integer"
+            },
+            "avg_pick_time": {
+              "type": "integer"
+            },
+            "avg_road_time": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "serviceable_area_id",
+            "delivery_mode_id",
+            "avg_pick_time",
+            "avg_road_time"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "serviceable_area_id": {
+              "type": "integer"
+            },
+            "delivery_mode_id": {
+              "type": "integer"
+            },
+            "avg_pick_time": {
+              "type": "integer"
+            },
+            "avg_road_time": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "serviceable_area_id",
+            "delivery_mode_id",
+            "avg_pick_time",
+            "avg_road_time"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "serviceable_area_id": {
+              "type": "integer"
+            },
+            "delivery_mode_id": {
+              "type": "integer"
+            },
+            "avg_pick_time": {
+              "type": "integer"
+            },
+            "avg_road_time": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "serviceable_area_id",
+            "delivery_mode_id",
+            "avg_pick_time",
+            "avg_road_time"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "serviceable_area_id": {
+              "type": "integer"
+            },
+            "delivery_mode_id": {
+              "type": "integer"
+            },
+            "avg_pick_time": {
+              "type": "integer"
+            },
+            "avg_road_time": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "serviceable_area_id",
+            "delivery_mode_id",
+            "avg_pick_time",
+            "avg_road_time"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "serviceable_area_id": {
+              "type": "integer"
+            },
+            "delivery_mode_id": {
+              "type": "integer"
+            },
+            "avg_pick_time": {
+              "type": "integer"
+            },
+            "avg_road_time": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "serviceable_area_id",
+            "delivery_mode_id",
+            "avg_pick_time",
+            "avg_road_time"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "status",
+    "report",
+    "data"
+  ]
+}

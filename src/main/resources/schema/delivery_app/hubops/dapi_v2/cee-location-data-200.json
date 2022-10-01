@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "is_geofenced": {
+      "type": "boolean"
+    },
+    "msg": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "is_geofenced",
+    "msg"
+  ]
+}

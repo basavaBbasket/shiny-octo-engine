@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "picking_info": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "order_id": {
+              "type": "integer"
+            },
+            "pick_start_time": {
+              "type": "string"
+            },
+            "pick_end_time": {
+              "type": "string"
+            },
+            "picked_items": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "container_label": {
+                      "type": "string"
+                    },
+                    "items": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "sku_id": {
+                              "type": "integer"
+                            },
+                            "original_quantity": {
+                              "type": "integer"
+                            },
+                            "picked_quantity": {
+                              "type": "number"
+                            },
+                            "bin_location": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "sku_id",
+                            "original_quantity",
+                            "picked_quantity",
+                            "bin_location"
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "container_label",
+                    "items"
+                  ]
+                }
+              ]
+            },
+            "picked_by_id": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "order_id",
+            "pick_start_time",
+            "pick_end_time",
+            "picked_items",
+            "picked_by_id"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "picking_info"
+  ]
+}

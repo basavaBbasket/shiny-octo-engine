@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "sku_id": {
+      "type": "integer"
+    },
+    "batches": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "batch_id": {
+              "type": "integer"
+            },
+            "total_quantity": {
+              "type": "integer"
+            },
+            "batch_details": {
+              "type": "object",
+              "properties": {
+                "sku_mrp": {
+                  "type": "integer"
+                },
+                "sku_cp": {
+                  "type": "integer"
+                },
+                "expiry_date": {
+                  "type": "string"
+                },
+                "manufacture_date": {
+                  "type": "string"
+                },
+                "is_bundlepack": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "sku_mrp",
+                "sku_cp",
+                "expiry_date",
+                "manufacture_date",
+                "is_bundlepack"
+              ]
+            }
+          },
+          "required": [
+            "batch_id",
+            "total_quantity",
+            "batch_details"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "sku_id",
+    "batches"
+  ]
+}

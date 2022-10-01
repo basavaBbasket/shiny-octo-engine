@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "route_id": {
+      "type": "integer"
+    },
+    "trip_status": {
+      "type": "string"
+    },
+    "are_orders_collected": {
+      "type": "boolean"
+    },
+    "orders": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "order_id": {
+              "type": "integer"
+            },
+            "order_type": {
+              "type": "string"
+            },
+            "bin_info": {
+              "type": "object",
+              "properties": {
+                "bin_location": {
+                  "type": "string"
+                },
+                "bags_to_collect": {
+                  "type": "integer"
+                },
+                "bin_type": {
+                  "type": "string"
+                },
+                "machine_id": {
+                  "type": "string"
+                },
+                "door_name": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "bin_location",
+                "bags_to_collect",
+                "bin_type",
+                "machine_id",
+                "door_name"
+              ]
+            }
+          },
+          "required": [
+            "order_id",
+            "order_type",
+            "bin_info"
+          ]
+        }
+      ]
+    },
+    "msg": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "route_id",
+    "trip_status",
+    "are_orders_collected",
+    "orders",
+    "msg"
+  ]
+}
