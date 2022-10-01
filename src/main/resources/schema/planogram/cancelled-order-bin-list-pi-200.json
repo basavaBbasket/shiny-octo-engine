@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "bin_loc": {
+          "type": "string"
+        },
+        "order_id": {
+          "type": "integer"
+        },
+        "no_of_containers": {
+          "type": "integer"
+        },
+        "container_info": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "bin_loc",
+        "order_id",
+        "no_of_containers",
+        "container_info"
+      ]
+    }
+  ]
+}

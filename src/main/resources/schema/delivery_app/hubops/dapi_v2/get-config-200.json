@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "success": {
+      "type": "boolean"
+    },
+    "return_reasons": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "reason": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "reason"
+          ]
+        }
+      ]
+    },
+    "traffic_reasons": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "amount_collection": {
+      "type": "object",
+      "properties": {
+        "excess": {
+          "type": "integer"
+        },
+        "short": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "excess",
+        "short"
+      ]
+    },
+    "enable-sodexo": {
+      "type": "boolean"
+    },
+    "dapi_config": {
+      "type": "object"
+    },
+    "enable_eq": {
+      "type": "boolean"
+    },
+    "enable_delivery_photos": {
+      "type": "boolean"
+    },
+    "location_sync_interval": {
+      "type": "integer"
+    },
+    "trip_location_sync_interval": {
+      "type": "integer"
+    },
+    "enable_sync_cee_device_payload": {
+      "type": "boolean"
+    },
+    "enable_call_to_customer": {
+      "type": "boolean"
+    },
+    "allow_qr_scan_to_checkin": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "success",
+    "return_reasons",
+    "traffic_reasons",
+    "amount_collection",
+    "enable-sodexo",
+    "dapi_config",
+    "enable_eq",
+    "enable_delivery_photos",
+    "location_sync_interval",
+    "trip_location_sync_interval",
+    "enable_sync_cee_device_payload",
+    "enable_call_to_customer",
+    "allow_qr_scan_to_checkin"
+  ]
+}

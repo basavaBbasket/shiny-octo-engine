@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "eligibility_queue_status": {
+      "type": "string"
+    },
+    "active_list_status": {
+      "type": "string"
+    },
+    "eligibility_queue_eta": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "eligibility_queue_status",
+    "active_list_status",
+    "eligibility_queue_eta"
+  ]
+}

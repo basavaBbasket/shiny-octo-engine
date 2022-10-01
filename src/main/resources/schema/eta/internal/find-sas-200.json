@@ -1,0 +1,141 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "is_active": {
+          "type": "boolean"
+        },
+        "lmd_fc_id": {
+          "type": "integer"
+        },
+        "city_id": {
+          "type": "integer"
+        },
+        "entry_context_id": {
+          "type": "integer"
+        },
+        "short_name": {
+          "type": "string"
+        },
+        "sa_type": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "slug": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "slug"
+          ]
+        },
+        "sa_mode": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "slug": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "slug"
+          ]
+        },
+        "dms": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "slug": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "slug"
+              ]
+            }
+          ]
+        },
+        "global_dms": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "slug": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "slug"
+              ]
+            }
+          ]
+        },
+        "sub_area_dms": {
+          "type": "array",
+          "items": {}
+        },
+        "sub_areas": {
+          "type": "array",
+          "items": {}
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "is_active",
+        "lmd_fc_id",
+        "city_id",
+        "entry_context_id",
+        "short_name",
+        "sa_type",
+        "sa_mode",
+        "dms",
+        "global_dms",
+        "sub_area_dms",
+        "sub_areas"
+      ]
+    }
+  ]
+}

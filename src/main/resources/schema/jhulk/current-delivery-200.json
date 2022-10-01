@@ -1,0 +1,248 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "source_id": {
+      "type": "integer"
+    },
+    "actual_city_id": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "integer"
+    },
+    "member_id": {
+      "type": "integer"
+    },
+    "nick": {
+      "type": "string"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "contact_no": {
+      "type": "string"
+    },
+    "use_contact_no": {
+      "type": "boolean"
+    },
+    "address1": {
+      "type": "string"
+    },
+    "address2": {
+      "type": "string"
+    },
+    "complex": {
+      "type": "string"
+    },
+    "landmark": {
+      "type": "string"
+    },
+    "area": {
+      "type": "string"
+    },
+    "pin": {
+      "type": "integer"
+    },
+    "lat": {
+      "type": "number"
+    },
+    "lng": {
+      "type": "number"
+    },
+    "is_validated": {
+      "type": "boolean"
+    },
+    "is_mapped": {
+      "type": "boolean"
+    },
+    "bb1_backendcity_id": {
+      "type": "integer"
+    },
+    "bb1_shadow_id": {
+      "type": "integer"
+    },
+    "is_current_delivery": {
+      "type": "boolean"
+    },
+    "is_default": {
+      "type": "boolean"
+    },
+    "is_partial": {
+      "type": "boolean"
+    },
+    "state_id": {
+      "type": "integer"
+    },
+    "city_id": {
+      "type": "integer"
+    },
+    "state_name": {
+      "type": "string"
+    },
+    "gst_state_code": {
+      "type": "string"
+    },
+    "state_code": {
+      "type": "string"
+    },
+    "state_slug": {
+      "type": "string"
+    },
+    "city_name": {
+      "type": "string"
+    },
+    "city_short_name": {
+      "type": "null"
+    },
+    "apartment": {
+      "type": "null"
+    },
+    "member": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "first_name": {
+          "type": "string"
+        },
+        "last_name": {
+          "type": "string"
+        },
+        "member_type": {
+          "type": "string"
+        },
+        "member_type_id": {
+          "type": "integer"
+        },
+        "source_id": {
+          "type": "integer"
+        },
+        "email": {
+          "type": "string"
+        },
+        "mobile_no": {
+          "type": "string"
+        },
+        "customer_hash": {
+          "type": "string"
+        },
+        "city_id": {
+          "type": "integer"
+        },
+        "is_loyal": {
+          "type": "boolean"
+        },
+        "phone_no": {
+          "type": "string"
+        },
+        "is_vip": {
+          "type": "boolean"
+        },
+        "language_id": {
+          "type": "integer"
+        },
+        "ec_ids": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "is_multicity_enabled": {
+          "type": "boolean"
+        },
+        "is_institutional": {
+          "type": "boolean"
+        },
+        "is_kirana": {
+          "type": "boolean"
+        },
+        "full_name": {
+          "type": "string"
+        },
+        "is_exclusive_member": {
+          "type": "boolean"
+        },
+        "is_priority_member": {
+          "type": "boolean"
+        },
+        "is_bbstar_member": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "first_name",
+        "last_name",
+        "member_type",
+        "member_type_id",
+        "source_id",
+        "email",
+        "mobile_no",
+        "customer_hash",
+        "city_id",
+        "is_loyal",
+        "phone_no",
+        "is_vip",
+        "language_id",
+        "ec_ids",
+        "is_multicity_enabled",
+        "is_institutional",
+        "is_kirana",
+        "full_name",
+        "is_exclusive_member",
+        "is_priority_member",
+        "is_bbstar_member"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "source_id",
+    "actual_city_id",
+    "status",
+    "member_id",
+    "nick",
+    "first_name",
+    "last_name",
+    "contact_no",
+    "use_contact_no",
+    "address1",
+    "address2",
+    "complex",
+    "landmark",
+    "area",
+    "pin",
+    "lat",
+    "lng",
+    "is_validated",
+    "is_mapped",
+    "bb1_backendcity_id",
+    "bb1_shadow_id",
+    "is_current_delivery",
+    "is_default",
+    "is_partial",
+    "state_id",
+    "city_id",
+    "state_name",
+    "gst_state_code",
+    "state_code",
+    "state_slug",
+    "city_name",
+    "city_short_name",
+    "apartment",
+    "member"
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "picking": {
+      "type": "object",
+      "properties": {
+        "jobs": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "job_id": {
+                  "type": "integer"
+                },
+                "sku_location_info": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "task_id": {
+                          "type": "integer"
+                        },
+                        "sequence_id": {
+                          "type": "integer"
+                        },
+                        "order_id": {
+                          "type": "integer"
+                        },
+                        "sku_id": {
+                          "type": "integer"
+                        },
+                        "is_processed": {
+                          "type": "boolean"
+                        },
+                        "quantity_recommended": {
+                          "type": "integer"
+                        },
+                        "location_id": {
+                          "type": "integer"
+                        },
+                        "bin_location": {
+                          "type": "string"
+                        },
+                        "bin_id": {
+                          "type": "integer"
+                        },
+                        "batch_id": {
+                          "type": "integer"
+                        },
+                        "available_qty": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "task_id",
+                        "sequence_id",
+                        "order_id",
+                        "sku_id",
+                        "is_processed",
+                        "quantity_recommended",
+                        "location_id",
+                        "bin_location",
+                        "bin_id",
+                        "batch_id",
+                        "available_qty"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "job_id",
+                "sku_location_info"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "jobs"
+      ]
+    },
+    "stacking": {
+      "type": "object"
+    },
+    "cycle-count": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "picking",
+    "stacking",
+    "cycle-count"
+  ]
+}

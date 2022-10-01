@@ -1,0 +1,44 @@
+{
+  "member_info": {
+    "xmemberid": "${xmemberid}",
+    "first_name": "team",
+    "last_name": "automation",
+    "email": "${email}",
+    "mobile_no": "${mobile_no}"
+  },
+  "address_info": {
+    "xaddressid": "${xaddressid}",
+    "lat": "${lat}",
+    "lon": "${lon}",
+    "area": "test area",
+    "pincode": "${pincode}",
+    "address1": "Test1",
+    "address2": "Test 2",
+    "nickname_address": "Automation address",
+    "landmark": "BigBasket",
+    "city": "${city}"
+  },
+  "order_info": [
+    {
+      "xorderid": "${xorderid}",
+      "p_order_id": "${p_order_id}",
+      "xfulfillment_id": "${xfulfillment_id}",
+      "delivery_charges": 50,
+      "items_info": [
+        {
+          "partner_prod_id": "${partner_prod_id}",
+          "quantity": 3,
+          "mrp": 101.00,
+          "selling_price": 98.00,
+          "shipping_amount": 50
+        }
+      ],
+      "slot_info": {
+        "slot_date": "${slot_date}",
+        "slot_id": "${slot_id}",
+        "shipment_type": "full",
+        "fulfillment_type": "${fulfillment_type}"
+      }
+    }
+  ]
+}

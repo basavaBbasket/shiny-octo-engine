@@ -1,0 +1,120 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "job_id": {
+      "type": "integer"
+    },
+    "sku_location_info": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "task_id": {
+              "type": "integer"
+            },
+            "sequence_id": {
+              "type": "integer"
+            },
+            "order_id": {
+              "type": "integer"
+            },
+            "quantity_recommended": {
+              "type": "integer"
+            },
+            "is_processed": {
+              "type": "boolean"
+            },
+            "bin_id": {
+              "type": "integer"
+            },
+            "bin_location": {
+              "type": "string"
+            },
+            "batch_id": {
+              "type": "integer"
+            },
+            "sku_id": {
+              "type": "integer"
+            },
+            "location_id": {
+              "type": "integer"
+            },
+            "available_qty": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "task_id",
+            "sequence_id",
+            "order_id",
+            "quantity_recommended",
+            "is_processed",
+            "bin_id",
+            "bin_location",
+            "batch_id",
+            "sku_id",
+            "location_id",
+            "available_qty"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "task_id": {
+              "type": "integer"
+            },
+            "sequence_id": {
+              "type": "integer"
+            },
+            "order_id": {
+              "type": "integer"
+            },
+            "quantity_recommended": {
+              "type": "integer"
+            },
+            "is_processed": {
+              "type": "boolean"
+            },
+            "bin_id": {
+              "type": "integer"
+            },
+            "bin_location": {
+              "type": "string"
+            },
+            "batch_id": {
+              "type": "integer"
+            },
+            "sku_id": {
+              "type": "integer"
+            },
+            "location_id": {
+              "type": "integer"
+            },
+            "available_qty": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "task_id",
+            "sequence_id",
+            "order_id",
+            "quantity_recommended",
+            "is_processed",
+            "bin_id",
+            "bin_location",
+            "batch_id",
+            "sku_id",
+            "location_id",
+            "available_qty"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "job_id",
+    "sku_location_info"
+  ]
+}

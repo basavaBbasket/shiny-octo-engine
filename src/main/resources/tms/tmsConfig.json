@@ -1,0 +1,65 @@
+{
+  "qas":{
+    "entry_context": "tatacroma",
+    "entry_context_id": 1,
+    "originContext": 1,
+    "max_slot_count": 10,
+    "max_slot_days": 3,
+    "lmd_fc_id": 1,
+    "dapi_password": "pbkdf2_sha512$150000$p5ogwJBYjzvp3ixTb3LGKRA5iPIJ4QlmbQvmbTNR33aHDFl9v7tEVu-p9y_Q7SA-OOjQoWJS__uCOhdcnbUTjQ$8xLYDYnsVquv1n2wjUYtBPD1KasaZh8dSj2fLHT4BSn2sa0sIVvXkp5Lqyu3qOd9+/D4a4EsAtMpZuVFRUzpzA==",
+    "actions":
+      {
+        "action_code":2325,
+        "action_desc":["",""],
+        "value":["123","124"]
+      },
+    "default_dm_info": {
+      "id": 1,
+      "name": "van"
+    },
+    "payment_method": "cod",
+    "skuDetails":
+      {
+        "offset_in_minutes": 10,
+        "label": "2324acb",
+        "mrp": "50.00",
+        "sp": "40.0",
+        "quantity": 2.0,
+        "shipment_charge": "10.00",
+        "reason_id": 0
+      }
+
+  },
+  "hqa": {
+    "entry_context": "tatacroma",
+    "entry_context_id": 1,
+    "originContext": 1,
+    "max_slot_count": 10,
+    "max_slot_days": 3,
+    "lmd_fc_id": 1,
+    "dapi_password": "pbkdf2_sha512$150000$p5ogwJBYjzvp3ixTb3LGKRA5iPIJ4QlmbQvmbTNR33aHDFl9v7tEVu-p9y_Q7SA-OOjQoWJS__uCOhdcnbUTjQ$8xLYDYnsVquv1n2wjUYtBPD1KasaZh8dSj2fLHT4BSn2sa0sIVvXkp5Lqyu3qOd9+/D4a4EsAtMpZuVFRUzpzA==",
+    "actions":
+    {
+      "action_code":2325,
+      "action_desc":["",""],
+      "value":["123","124"]
+    },
+    "default_dm_info": {
+      "id": 1,
+      "name": "van"
+    },
+    "payment_method": "cod",
+    "skuDetails":
+    {
+      "id": "12345",
+      "offset_in_minutes": 10,
+      "label": "2324acb",
+      "mrp": "50.00",
+      "sp": "40.0",
+      "quantity": 2.0,
+      "shipment_charge": "10.00",
+      "reason_id": 1
+    }
+
+  }
+}

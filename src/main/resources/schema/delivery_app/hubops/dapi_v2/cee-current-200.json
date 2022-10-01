@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "stores": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "sa_id": {
+              "type": "integer"
+            },
+            "dm_id": {
+              "type": "integer"
+            },
+            "has_route_assigned": {
+              "type": "boolean"
+            },
+            "delivery_label": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "sa_id",
+            "dm_id",
+            "has_route_assigned",
+            "delivery_label"
+          ]
+        }
+      ]
+    },
+    "has_route_assigned": {
+      "type": "boolean"
+    },
+    "pool_status": {
+      "type": "object",
+      "properties": {
+        "eligibility_queue_status": {
+          "type": "string"
+        },
+        "active_list_status": {
+          "type": "string"
+        },
+        "eligibility_queue_eta": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "eligibility_queue_status",
+        "active_list_status",
+        "eligibility_queue_eta"
+      ]
+    },
+    "sa_id": {
+      "type": "integer"
+    },
+    "dm_id": {
+      "type": "integer"
+    },
+    "zero_store_msg": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "stores",
+    "has_route_assigned",
+    "pool_status",
+    "sa_id",
+    "dm_id",
+    "zero_store_msg"
+  ]
+}

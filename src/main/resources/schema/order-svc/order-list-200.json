@@ -1,0 +1,800 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "details": {
+          "type": "object",
+          "properties": {
+            "order_id": {
+              "type": "integer"
+            },
+            "xorder_id": {
+              "type": "integer"
+            },
+            "xfulfillment_id": {
+              "type": "integer"
+            },
+            "sa_id": {
+              "type": "integer"
+            },
+            "order_number": {
+              "type": "string"
+            },
+            "is_vip": {
+              "type": "boolean"
+            },
+            "is_contactless": {
+              "type": "boolean"
+            },
+            "is_addon": {
+              "type": "boolean"
+            },
+            "member_address_id": {
+              "type": "integer"
+            },
+            "entry_context_id": {
+              "type": "integer"
+            },
+            "member_id": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "string"
+            },
+            "potential_order_id": {
+              "type": "integer"
+            },
+            "sa_city_id": {
+              "type": "integer"
+            },
+            "channel": {
+              "type": "integer"
+            },
+            "delivery_id": {
+              "type": "integer"
+            },
+            "dm_id": {
+              "type": "integer"
+            },
+            "lmd_fc_id": {
+              "type": "integer"
+            },
+            "admin_comment": {
+              "type": "string"
+            },
+            "member_comment": {
+              "type": "string"
+            },
+            "order_type": {
+              "type": "string"
+            },
+            "num_slot_changes": {
+              "type": "integer"
+            },
+            "invoice_url": {
+              "type": "string"
+            },
+            "weight": {
+              "type": "number"
+            },
+            "created_on": {
+              "type": "string"
+            },
+            "container_labels": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "destination_location": {
+              "type": "object",
+              "properties": {
+                "lat": {
+                  "type": "number"
+                },
+                "lon": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "lat",
+                "lon"
+              ]
+            }
+          },
+          "required": [
+            "order_id",
+            "xorder_id",
+            "xfulfillment_id",
+            "sa_id",
+            "order_number",
+            "is_vip",
+            "is_contactless",
+            "is_addon",
+            "member_address_id",
+            "entry_context_id",
+            "member_id",
+            "status",
+            "potential_order_id",
+            "sa_city_id",
+            "channel",
+            "delivery_id",
+            "dm_id",
+            "lmd_fc_id",
+            "admin_comment",
+            "member_comment",
+            "order_type",
+            "num_slot_changes",
+            "invoice_url",
+            "weight",
+            "created_on",
+            "container_labels",
+            "destination_location"
+          ]
+        },
+        "eta": {
+          "type": "object",
+          "properties": {
+            "eta_display_str": {
+              "type": "string"
+            },
+            "estimated_arrival": {
+              "type": "string"
+            },
+            "show_eta": {
+              "type": "boolean"
+            },
+            "dg_time": {
+              "type": "string"
+            },
+            "dg_message": {
+              "type": "string"
+            },
+            "delivered_at": {
+              "type": "string"
+            },
+            "order_status_message": {
+              "type": "string"
+            },
+            "order_eta_message": {
+              "type": "string"
+            },
+            "order_delivery_message": {
+              "type": "string"
+            },
+            "order_delayed_delivery_message": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "eta_display_str",
+            "estimated_arrival",
+            "show_eta",
+            "dg_time",
+            "dg_message",
+            "delivered_at",
+            "order_status_message",
+            "order_eta_message",
+            "order_delivery_message",
+            "order_delayed_delivery_message"
+          ]
+        },
+        "return_details": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "sku_id": {
+                  "type": "integer"
+                },
+                "quantity_to_pick": {
+                  "type": "number"
+                },
+                "quantity_picked": {
+                  "type": "number"
+                },
+                "pick_order_id": {
+                  "type": "integer"
+                },
+                "pickup_order_status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "sku_id",
+                "quantity_to_pick",
+                "quantity_picked",
+                "pick_order_id",
+                "pickup_order_status"
+              ]
+            }
+          ]
+        },
+        "modifications": {
+          "type": "object",
+          "properties": {
+            "change_status": {
+              "type": "object",
+              "properties": {
+                "old_value": {
+                  "type": "object"
+                },
+                "new_value": {
+                  "type": "object"
+                }
+              },
+              "required": [
+                "old_value",
+                "new_value"
+              ]
+            },
+            "cancel_order": {
+              "type": "object",
+              "properties": {
+                "old_value": {
+                  "type": "object"
+                },
+                "new_value": {
+                  "type": "object"
+                }
+              },
+              "required": [
+                "old_value",
+                "new_value"
+              ]
+            },
+            "change_sa": {
+              "type": "object",
+              "properties": {
+                "old_value": {
+                  "type": "object"
+                },
+                "new_value": {
+                  "type": "object"
+                }
+              },
+              "required": [
+                "old_value",
+                "new_value"
+              ]
+            },
+            "change_address": {
+              "type": "object",
+              "properties": {
+                "old_value": {
+                  "type": "object"
+                },
+                "new_value": {
+                  "type": "object"
+                }
+              },
+              "required": [
+                "old_value",
+                "new_value"
+              ]
+            },
+            "change_slot": {
+              "type": "object",
+              "properties": {
+                "old_value": {
+                  "type": "object"
+                },
+                "new_value": {
+                  "type": "object"
+                }
+              },
+              "required": [
+                "old_value",
+                "new_value"
+              ]
+            },
+            "waive_delivery_charge": {
+              "type": "object",
+              "properties": {
+                "old_value": {
+                  "type": "object"
+                },
+                "new_value": {
+                  "type": "object"
+                }
+              },
+              "required": [
+                "old_value",
+                "new_value"
+              ]
+            },
+            "convert_small": {
+              "type": "object",
+              "properties": {
+                "old_value": {
+                  "type": "object"
+                },
+                "new_value": {
+                  "type": "object"
+                }
+              },
+              "required": [
+                "old_value",
+                "new_value"
+              ]
+            }
+          },
+          "required": [
+            "change_status",
+            "cancel_order",
+            "change_sa",
+            "change_address",
+            "change_slot",
+            "waive_delivery_charge",
+            "convert_small"
+          ]
+        },
+        "item_modifications": {
+          "type": "object",
+          "properties": {
+            "not-delivered": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "old_quantity": {
+                      "type": "integer"
+                    },
+                    "new_quantity": {
+                      "type": "integer"
+                    },
+                    "sku_id": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "old_quantity",
+                    "new_quantity",
+                    "sku_id"
+                  ]
+                }
+              ]
+            },
+            "return": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "old_quantity": {
+                      "type": "integer"
+                    },
+                    "new_quantity": {
+                      "type": "integer"
+                    },
+                    "sku_id": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "old_quantity",
+                    "new_quantity",
+                    "sku_id"
+                  ]
+                }
+              ]
+            },
+            "invoiced_not_delivered": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "old_quantity": {
+                      "type": "integer"
+                    },
+                    "new_quantity": {
+                      "type": "integer"
+                    },
+                    "sku_id": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "old_quantity",
+                    "new_quantity",
+                    "sku_id"
+                  ]
+                }
+              ]
+            },
+            "weight-change": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "old_quantity": {
+                      "type": "integer"
+                    },
+                    "new_quantity": {
+                      "type": "integer"
+                    },
+                    "sku_id": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "old_quantity",
+                    "new_quantity",
+                    "sku_id"
+                  ]
+                }
+              ]
+            },
+            "delete": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "old_quantity": {
+                      "type": "integer"
+                    },
+                    "new_quantity": {
+                      "type": "integer"
+                    },
+                    "sku_id": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "old_quantity",
+                    "new_quantity",
+                    "sku_id"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "not-delivered",
+            "return",
+            "invoiced_not_delivered",
+            "weight-change",
+            "delete"
+          ]
+        },
+        "item_details": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "sku_id": {
+                  "type": "integer"
+                },
+                "weight": {
+                  "type": "integer"
+                },
+                "mrp": {
+                  "type": "number"
+                },
+                "sp": {
+                  "type": "number"
+                },
+                "quantity": {
+                  "type": "integer"
+                },
+                "line_item_price": {
+                  "type": "number"
+                },
+                "origin_fc_id": {
+                  "type": "integer"
+                },
+                "frozen_path_id": {
+                  "type": "integer"
+                },
+                "display_message": {
+                  "type": "string"
+                },
+                "path_type": {
+                  "type": "string"
+                },
+                "pricing_detail": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "sku_id",
+                "weight",
+                "mrp",
+                "sp",
+                "quantity",
+                "line_item_price",
+                "origin_fc_id",
+                "frozen_path_id",
+                "display_message",
+                "path_type",
+                "pricing_detail"
+              ]
+            }
+          ]
+        },
+        "slot_details": {
+          "type": "object",
+          "properties": {
+            "slot_definition_id": {
+              "type": "integer"
+            },
+            "template_slot_id": {
+              "type": "integer"
+            },
+            "from_time": {
+              "type": "string"
+            },
+            "to_time": {
+              "type": "string"
+            },
+            "slot_reservation_id": {
+              "type": "integer"
+            },
+            "slot_type_id": {
+              "type": "integer"
+            },
+            "slot_date": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "slot_definition_id",
+            "template_slot_id",
+            "from_time",
+            "to_time",
+            "slot_reservation_id",
+            "slot_type_id",
+            "slot_date"
+          ]
+        },
+        "invoicing_details": {
+          "type": "object",
+          "properties": {
+            "original_total": {
+              "type": "number"
+            },
+            "sub_total": {
+              "type": "number"
+            },
+            "total": {
+              "type": "integer"
+            },
+            "food_total": {
+              "type": "number"
+            },
+            "credit_amount": {
+              "type": "number"
+            },
+            "voucher_code": {
+              "type": "string"
+            },
+            "voucher_amount": {
+              "type": "number"
+            },
+            "invoice_number": {
+              "type": "string"
+            },
+            "payment_method": {
+              "type": "string"
+            },
+            "payment_method_display": {
+              "type": "string"
+            },
+            "is_prepaid": {
+              "type": "boolean"
+            },
+            "gst_sequence_number": {
+              "type": "string"
+            },
+            "delivery_charge": {
+              "type": "integer"
+            },
+            "total_payable": {
+              "type": "number"
+            },
+            "meat_variable_weight_amount": {
+              "type": "integer"
+            },
+            "fnv_variable_weight_amount": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "original_total",
+            "sub_total",
+            "total",
+            "food_total",
+            "credit_amount",
+            "voucher_code",
+            "voucher_amount",
+            "invoice_number",
+            "payment_method",
+            "payment_method_display",
+            "is_prepaid",
+            "gst_sequence_number",
+            "delivery_charge",
+            "total_payable",
+            "meat_variable_weight_amount",
+            "fnv_variable_weight_amount"
+          ]
+        },
+        "tax_details": {
+          "type": "object",
+          "properties": {
+            "sgst_total": {
+              "type": "integer"
+            },
+            "cgst_total": {
+              "type": "integer"
+            },
+            "igst_total": {
+              "type": "integer"
+            },
+            "cess_total": {
+              "type": "integer"
+            },
+            "item_details": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "sku_id": {
+                      "type": "integer"
+                    },
+                    "cgst": {
+                      "type": "object",
+                      "properties": {
+                        "val": {
+                          "type": "integer"
+                        },
+                        "rate": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "val",
+                        "rate"
+                      ]
+                    },
+                    "igst": {
+                      "type": "object",
+                      "properties": {
+                        "val": {
+                          "type": "integer"
+                        },
+                        "rate": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "val",
+                        "rate"
+                      ]
+                    },
+                    "sgst": {
+                      "type": "object",
+                      "properties": {
+                        "val": {
+                          "type": "integer"
+                        },
+                        "rate": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "val",
+                        "rate"
+                      ]
+                    },
+                    "cess": {
+                      "type": "object",
+                      "properties": {
+                        "val": {
+                          "type": "integer"
+                        },
+                        "rate": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "val",
+                        "rate"
+                      ]
+                    },
+                    "hsn": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "sku_id",
+                    "cgst",
+                    "igst",
+                    "sgst",
+                    "cess",
+                    "hsn"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "sgst_total",
+            "cgst_total",
+            "igst_total",
+            "cess_total",
+            "item_details"
+          ]
+        },
+        "status_time_details": {
+          "type": "object",
+          "properties": {
+            "open_time": {
+              "type": "string"
+            },
+            "in_process_time": {
+              "type": "string"
+            },
+            "rts_time": {
+              "type": "string"
+            },
+            "delivered_time": {
+              "type": "string"
+            },
+            "completed_time": {
+              "type": "string"
+            },
+            "cancelled_time": {
+              "type": "string"
+            },
+            "cs_update_time": {
+              "type": "string"
+            },
+            "oc_reason_update_time": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "open_time",
+            "in_process_time",
+            "rts_time",
+            "delivered_time",
+            "completed_time",
+            "cancelled_time",
+            "cs_update_time",
+            "oc_reason_update_time"
+          ]
+        }
+      },
+      "required": [
+        "details",
+        "eta",
+        "return_details",
+        "modifications",
+        "item_modifications",
+        "item_details",
+        "slot_details",
+        "invoicing_details",
+        "tax_details",
+        "status_time_details"
+      ]
+    }
+  ]
+}

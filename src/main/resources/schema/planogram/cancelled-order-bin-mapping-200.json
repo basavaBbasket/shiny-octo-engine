@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "bin_loc": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string"
+    },
+    "machineID": {
+      "type": "string"
+    },
+    "doorname": {
+      "type": "string"
+    },
+    "no_of_containers": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "bin_loc",
+    "mode",
+    "machineID",
+    "doorname",
+    "no_of_containers"
+  ]
+}

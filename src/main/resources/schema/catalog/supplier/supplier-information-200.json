@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "code": {
+          "type": "string"
+        },
+        "description": {
+          "type": "null"
+        },
+        "name": {
+          "type": "string"
+        },
+        "slug": {
+          "type": "string"
+        },
+        "gstn_no": {
+          "type": "null"
+        },
+        "credit_days": {
+          "type": "null"
+        },
+        "channel": {
+          "type": "null"
+        },
+        "is_sor_supplier": {
+          "type": "null"
+        },
+        "state_id": {
+          "type": "null"
+        },
+        "is_active": {
+          "type": "boolean"
+        },
+        "marketing_company_id": {
+          "type": "null"
+        },
+        "supplier_type_id": {
+          "type": "integer"
+        },
+        "address": {
+          "type": "null"
+        },
+        "email": {
+          "type": "null"
+        },
+        "phone": {
+          "type": "object"
+        },
+        "config": {
+          "type": "object",
+          "properties": {
+            "multi_grn_allowed": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "multi_grn_allowed"
+          ]
+        },
+        "supplier_type": {
+          "type": "string"
+        },
+        "fc_id": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "id",
+        "code",
+        "description",
+        "name",
+        "slug",
+        "gstn_no",
+        "credit_days",
+        "channel",
+        "is_sor_supplier",
+        "state_id",
+        "is_active",
+        "marketing_company_id",
+        "supplier_type_id",
+        "address",
+        "email",
+        "phone",
+        "config",
+        "supplier_type",
+        "fc_id"
+      ]
+    }
+  ]
+}
