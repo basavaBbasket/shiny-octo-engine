@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "bin_loc": {
+          "type": "string"
+        },
+        "order_id": {
+          "type": "string"
+        },
+        "no_of_containers": {
+          "type": "integer"
+        },
+        "container_info": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "bin_loc",
+        "order_id",
+        "no_of_containers",
+        "container_info"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "bin_loc": {
+          "type": "string"
+        },
+        "order_id": {
+          "type": "string"
+        },
+        "no_of_containers": {
+          "type": "integer"
+        },
+        "container_info": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "bin_loc",
+        "order_id",
+        "no_of_containers",
+        "container_info"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "member_info":{
+    "xmemberid":"${xmemberid}"
+  },
+  "address_info":{
+    "xaddressid":"${xmemberid}",
+    "lat":"${lat}",
+    "lon":"${lon}",
+    "pincode":"${pincode}"
+  },
+  "items_info":[
+    {
+      "partner_prod_id":"${partner_prod_id}",
+      "quantity":2
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "sa_id": {
+          "type": "integer"
+        },
+        "status": {
+          "type": "integer"
+        },
+        "eta": {
+          "type": "integer"
+        },
+        "current_threshold": {
+          "type": "integer"
+        },
+        "last_eta_computation": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "dg_percentage": {
+          "type": "integer"
+        },
+        "dg_time_buffer": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "sa_id",
+        "status",
+        "eta",
+        "current_threshold",
+        "last_eta_computation",
+        "id",
+        "reason",
+        "dg_percentage",
+        "dg_time_buffer"
+      ]
+    }
+  ]
+}

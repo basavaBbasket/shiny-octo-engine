@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "code": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "supplier_type_id": {
+          "type": "integer"
+        },
+        "fc_id": {
+          "type": "null"
+        },
+        "supplier_type": {
+          "type": "string"
+        },
+        "is_sor_supplier": {
+          "type": "boolean"
+        },
+        "gstn_no": {
+          "type": "string"
+        },
+        "channel": {
+          "type": "string"
+        },
+        "email": {
+          "type": "object",
+          "properties": {
+            "primary_email": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "primary_email"
+          ]
+        },
+        "phone": {
+          "type": "object",
+          "properties": {
+            "primary_phone_no": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "primary_phone_no"
+          ]
+        },
+        "state_id": {
+          "type": "integer"
+        },
+        "marketing_company_id": {
+          "type": "integer"
+        },
+        "is_active": {
+          "type": "boolean"
+        },
+        "config": {
+          "type": "object",
+          "properties": {
+            "multi_grn_enabled": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "multi_grn_enabled"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "code",
+        "name",
+        "supplier_type_id",
+        "fc_id",
+        "supplier_type",
+        "is_sor_supplier",
+        "gstn_no",
+        "channel",
+        "email",
+        "phone",
+        "state_id",
+        "marketing_company_id",
+        "is_active",
+        "config"
+      ]
+    }
+  ]
+}
