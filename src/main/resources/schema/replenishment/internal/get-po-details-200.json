@@ -1,0 +1,137 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "po_number": {
+      "type": "string"
+    },
+    "po_creation_date": {
+      "type": "string"
+    },
+    "po_delivery_date": {
+      "type": "string"
+    },
+    "po_expiry_date": {
+      "type": "string"
+    },
+    "po_supplier_id": {
+      "type": "integer"
+    },
+    "destination_fc_id": {
+      "type": "integer"
+    },
+    "po_status": {
+      "type": "integer"
+    },
+    "is_market_purchase": {
+      "type": "integer"
+    },
+    "interfc_order_id": {
+      "type": "integer"
+    },
+    "po_type": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "sku_id": {
+              "type": "integer"
+            },
+            "sku_description": {
+              "type": "string"
+            },
+            "ean_code": {
+              "type": "null"
+            },
+            "quantity": {
+              "type": "integer"
+            },
+            "basic_cp": {
+              "type": "string"
+            },
+            "mrp": {
+              "type": "string"
+            },
+            "cgst%": {
+              "type": "integer"
+            },
+            "cgst_val": {
+              "type": "string"
+            },
+            "sgst%": {
+              "type": "integer"
+            },
+            "sgst_val": {
+              "type": "string"
+            },
+            "igst%": {
+              "type": "integer"
+            },
+            "igst_val": {
+              "type": "string"
+            },
+            "cess%": {
+              "type": "integer"
+            },
+            "cess_val": {
+              "type": "string"
+            },
+            "tax%": {
+              "type": "integer"
+            },
+            "tax_value": {
+              "type": "string"
+            },
+            "case_quantity": {
+              "type": "integer"
+            },
+            "final_cp": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "sku_id",
+            "sku_description",
+            "ean_code",
+            "quantity",
+            "basic_cp",
+            "mrp",
+            "cgst%",
+            "cgst_val",
+            "sgst%",
+            "sgst_val",
+            "igst%",
+            "igst_val",
+            "cess%",
+            "cess_val",
+            "tax%",
+            "tax_value",
+            "case_quantity",
+            "final_cp"
+          ]
+        }
+      ]
+    },
+    "interfc_type": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "po_number",
+    "po_creation_date",
+    "po_delivery_date",
+    "po_expiry_date",
+    "po_supplier_id",
+    "destination_fc_id",
+    "po_status",
+    "is_market_purchase",
+    "interfc_order_id",
+    "po_type",
+    "items",
+    "interfc_type"
+  ]
+}

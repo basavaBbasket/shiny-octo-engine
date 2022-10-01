@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "created_by_id": {
+          "type": "integer"
+        },
+        "updated_by_id": {
+          "type": "integer"
+        },
+        "created_on": {
+          "type": "string"
+        },
+        "updated_on": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "sa_id": {
+          "type": "integer"
+        },
+        "status": {
+          "type": "integer"
+        },
+        "eta": {
+          "type": "integer"
+        },
+        "last_eta_computation": {
+          "type": "string"
+        },
+        "current_threshold_name": {
+          "type": "string"
+        },
+        "last_open_time": {
+          "type": "string"
+        },
+        "last_close_time": {
+          "type": "string"
+        },
+        "last_closed_reason": {
+          "type": "string"
+        },
+        "last_open_reason": {
+          "type": "string"
+        },
+        "entry_context_id": {
+          "type": "integer"
+        },
+        "dm_id": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "created_by_id",
+        "updated_by_id",
+        "created_on",
+        "updated_on",
+        "id",
+        "sa_id",
+        "status",
+        "eta",
+        "last_eta_computation",
+        "current_threshold_name",
+        "last_open_time",
+        "last_close_time",
+        "last_closed_reason",
+        "last_open_reason",
+        "entry_context_id",
+        "dm_id"
+      ]
+    }
+  ]
+}

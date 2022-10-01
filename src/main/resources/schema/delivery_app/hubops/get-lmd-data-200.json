@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "order_id": {
+      "type": "integer"
+    },
+    "cee_location": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "string"
+        },
+        "lng": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "lat",
+        "lng"
+      ]
+    },
+    "total_distance": {
+      "type": "string"
+    },
+    "eta": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "order_id",
+    "cee_location",
+    "total_distance",
+    "eta"
+  ]
+}

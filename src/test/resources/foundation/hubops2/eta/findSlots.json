@@ -1,0 +1,149 @@
+{
+  "hqa": [
+    {
+      "name": "Vanagram-Bike-DS",
+      "sa_id": 1,
+      "dm_id": 2,
+      "src_fc": 213,
+      "dest_fc": 213,
+      "contact_hub_id": 1157
+    },
+    {
+      "name": "Vanagram-Bike-LT",
+      "sa_id": 1,
+      "dm_id": 2,
+      "src_fc": 208,
+      "dest_fc": 213,
+      "contact_hub_id": 1157
+    },
+    {
+      "name": "Vanagram-Van-DS",
+      "sa_id": 1,
+      "dm_id": 1,
+      "src_fc": 213,
+      "dest_fc": 213,
+      "contact_hub_id": 1157
+    },
+    {
+      "name": "Vanagram-Van-LT",
+      "sa_id": 1,
+      "dm_id": 1,
+      "src_fc": 208,
+      "dest_fc": 213,
+      "contact_hub_id": 1157
+    },
+    {
+      "name": "Siddhapura-Van",
+      "sa_id": 131,
+      "dm_id": 1,
+      "src_fc": 241,
+      "dest_fc": 241,
+      "contact_hub_id": 1179
+    },
+    {
+      "name": "Siddhapura-Bike",
+      "sa_id": 131,
+      "dm_id": 2,
+      "src_fc": 241,
+      "dest_fc": 241,
+      "contact_hub_id": 1179
+    }
+  ],
+  "uat": [
+    {
+      "name": "HRBR-Bike-LT-FMCG",
+      "sa_id": 14,
+      "dm_id": 2,
+      "src_fc": 204,
+      "dest_fc": 221,
+      "contact_hub_id": 1157
+    },
+    {
+      "name": "HRBR-Bike-DS",
+      "sa_id": 14,
+      "dm_id": 2,
+      "src_fc": 221,
+      "dest_fc": 221,
+      "contact_hub_id": 1157
+    },
+    {
+      "name": "HRBR-Bike-LT-FV",
+      "sa_id": 14,
+      "dm_id": 2,
+      "src_fc": 205,
+      "dest_fc": 221,
+      "contact_hub_id": 1157
+    },
+    {
+      "name": "HRBR-Van-DS",
+      "sa_id": 14,
+      "dm_id": 1,
+      "src_fc": 221,
+      "dest_fc": 221,
+      "contact_hub_id": 1157
+    },
+    {
+      "name": "HRBR-Van-LT-FMCG",
+      "sa_id": 14,
+      "dm_id": 1,
+      "src_fc": 204,
+      "dest_fc": 221,
+      "contact_hub_id": 1157
+    },
+    {
+      "name": "HRBR-Van-LT-FV",
+      "sa_id": 14,
+      "dm_id": 1,
+      "src_fc": 205,
+      "dest_fc": 221,
+      "contact_hub_id": 1157
+    },
+    {
+      "name": "Ittemadu-Van-LT-BangaloreDC2",
+      "sa_id": 16,
+      "dm_id": 1,
+      "src_fc": 216,
+      "dest_fc": 222,
+      "contact_hub_id": 1650
+    },
+    {
+      "name": "Ittemadu-Van-DS",
+      "sa_id": 16,
+      "dm_id": 1,
+      "src_fc": 222,
+      "dest_fc": 222,
+      "contact_hub_id": 1650
+    },
+    {
+      "name": "Ittemadu-Van-LT-Bangalore-Meat",
+      "sa_id": 16,
+      "dm_id": 1,
+      "src_fc": 219,
+      "dest_fc": 222,
+      "contact_hub_id": 1650
+    },{
+      "name": "Ittemadu-Bike-LT-BangaloreDC2",
+      "sa_id": 16,
+      "dm_id": 2,
+      "src_fc": 216,
+      "dest_fc": 222,
+      "contact_hub_id": 1650
+    },
+    {
+      "name": "Ittemadu-Bike-DS",
+      "sa_id": 16,
+      "dm_id": 2,
+      "src_fc": 222,
+      "dest_fc": 222,
+      "contact_hub_id": 1650
+    },
+    {
+      "name": "Ittemadu-Bike-LT-Bangalore-Meat",
+      "sa_id": 16,
+      "dm_id": 2,
+      "src_fc": 219,
+      "dest_fc": 222,
+      "contact_hub_id": 1650
+    }
+  ]
+}

@@ -1,0 +1,480 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "order": {
+      "type": "object",
+      "properties": {
+        "shipment_name": {
+          "type": "string"
+        },
+        "order_number": {
+          "type": "string"
+        },
+        "invoice_url": {
+          "type": "string"
+        },
+        "delivery_id": {
+          "type": "integer"
+        },
+        "potential_order_id": {
+          "type": "integer"
+        },
+        "order_type": {
+          "type": "string"
+        },
+        "can_change_slot": {
+          "type": "boolean"
+        },
+        "can_exchange": {
+          "type": "boolean"
+        },
+        "can_pay": {
+          "type": "boolean"
+        },
+        "can_cancel": {
+          "type": "boolean"
+        },
+        "can_apply_voucher": {
+          "type": "boolean"
+        },
+        "can_addon": {
+          "type": "boolean"
+        },
+        "display_payment_method": {
+          "type": "string"
+        },
+        "payment_method": {
+          "type": "string"
+        },
+        "payment_status": {
+          "type": "string"
+        },
+        "payment_status_message": {
+          "type": "string"
+        },
+        "order_id": {
+          "type": "string"
+        },
+        "items_count": {
+          "type": "integer"
+        },
+        "display_status": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "voucher_code": {
+          "type": "string"
+        },
+        "voucher_type": {
+          "type": "string"
+        },
+        "voucher_amount": {
+          "type": "string"
+        },
+        "delivery_charge": {
+          "type": "number"
+        },
+        "free_delivery_reason": {
+          "type": "string"
+        },
+        "wallet_used": {
+          "type": "string"
+        },
+        "sub_total": {
+          "type": "number"
+        },
+        "final_total": {
+          "type": "number"
+        },
+        "contactless_delivery_charge": {
+          "type": "number"
+        },
+        "savings": {
+          "type": "number"
+        },
+        "food_total": {
+          "type": "number"
+        },
+        "credit_debit_message": {
+          "type": "string"
+        },
+        "is_express": {
+          "type": "boolean"
+        },
+        "is_addon": {
+          "type": "boolean"
+        },
+        "total_payable": {
+          "type": "number"
+        },
+        "addon_merged_status": {
+          "type": "string"
+        },
+        "addon_url": {
+          "type": "string"
+        },
+        "created_on": {
+          "type": "string"
+        },
+        "slot": {
+          "type": "object",
+          "properties": {
+            "from_time": {
+              "type": "string"
+            },
+            "to_time": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string"
+            },
+            "display_date": {
+              "type": "string"
+            },
+            "shipment_time": {
+              "type": "string"
+            },
+            "day": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "from_time",
+            "to_time",
+            "date",
+            "display_date",
+            "shipment_time",
+            "day"
+          ]
+        },
+        "eta": {
+          "type": "object",
+          "properties": {
+            "rts_delay": {
+              "type": "integer"
+            },
+            "threshold_lower_limit": {
+              "type": "integer"
+            },
+            "threshold_upper_limit": {
+              "type": "integer"
+            },
+            "threshold_name": {
+              "type": "string"
+            },
+            "threshold_id": {
+              "type": "integer"
+            },
+            "dg_percentage": {
+              "type": "integer"
+            },
+            "dg_time_buffer": {
+              "type": "integer"
+            },
+            "eta_display_str": {
+              "type": "string"
+            },
+            "order_status_message": {
+              "type": "string"
+            },
+            "dg_message": {
+              "type": "string"
+            },
+            "dg_time": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "rts_delay",
+            "threshold_lower_limit",
+            "threshold_upper_limit",
+            "threshold_name",
+            "threshold_id",
+            "dg_percentage",
+            "dg_time_buffer",
+            "eta_display_str",
+            "order_status_message",
+            "dg_message",
+            "dg_time"
+          ]
+        },
+        "items": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "tlc_name": {
+                  "type": "string"
+                },
+                "tlc_total": {
+                  "type": "number"
+                },
+                "tlc_num_items": {
+                  "type": "integer"
+                },
+                "line_items": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "llc_n": {
+                          "type": "string"
+                        },
+                        "tlc_n": {
+                          "type": "string"
+                        },
+                        "savings": {
+                          "type": "number"
+                        },
+                        "sku": {
+                          "type": "integer"
+                        },
+                        "actual_quantity": {
+                          "type": "number"
+                        },
+                        "quantity": {
+                          "type": "number"
+                        },
+                        "sp": {
+                          "type": "number"
+                        },
+                        "mrp": {
+                          "type": "number"
+                        },
+                        "weight": {
+                          "type": "string"
+                        },
+                        "img_url": {
+                          "type": "string"
+                        },
+                        "brand": {
+                          "type": "string"
+                        },
+                        "invoice_desc": {
+                          "type": "string"
+                        },
+                        "desc": {
+                          "type": "string"
+                        },
+                        "display_message": {
+                          "type": "string"
+                        },
+                        "total": {
+                          "type": "number"
+                        },
+                        "can_edit": {
+                          "type": "boolean"
+                        },
+                        "can_exchange": {
+                          "type": "boolean"
+                        },
+                        "actual_weight": {
+                          "type": "number"
+                        },
+                        "has_variable_weight": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "llc_n",
+                        "tlc_n",
+                        "savings",
+                        "sku",
+                        "actual_quantity",
+                        "quantity",
+                        "sp",
+                        "mrp",
+                        "weight",
+                        "img_url",
+                        "brand",
+                        "invoice_desc",
+                        "desc",
+                        "display_message",
+                        "total",
+                        "can_edit",
+                        "can_exchange",
+                        "actual_weight",
+                        "has_variable_weight"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "tlc_name",
+                "tlc_total",
+                "tlc_num_items",
+                "line_items"
+              ]
+            }
+          ]
+        },
+        "member": {
+          "type": "object",
+          "properties": {
+            "first_name": {
+              "type": "string"
+            },
+            "last_name": {
+              "type": "string"
+            },
+            "nick": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            },
+            "address1": {
+              "type": "string"
+            },
+            "address2": {
+              "type": "string"
+            },
+            "area": {
+              "type": "string"
+            },
+            "landmark": {
+              "type": "string"
+            },
+            "pin": {
+              "type": "integer"
+            },
+            "contact_number": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "residential_complex": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "first_name",
+            "last_name",
+            "nick",
+            "id",
+            "address1",
+            "address2",
+            "area",
+            "landmark",
+            "pin",
+            "contact_number",
+            "city",
+            "residential_complex"
+          ]
+        },
+        "old_system_order": {
+          "type": "boolean"
+        },
+        "state": {
+          "type": "string"
+        },
+        "internal_payment_status": {
+          "type": "string"
+        },
+        "shop_more": {
+          "type": "boolean"
+        },
+        "lat": {
+          "type": "string"
+        },
+        "lon": {
+          "type": "string"
+        },
+        "actual_weight": {
+          "type": "number"
+        },
+        "normalised_weight": {
+          "type": "number"
+        },
+        "ec_id": {
+          "type": "integer"
+        },
+        "order_modifications": {
+          "type": "array",
+          "items": {}
+        },
+        "sa_id": {
+          "type": "integer"
+        },
+        "lmdfc_id": {
+          "type": "integer"
+        },
+        "can_track_order": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "shipment_name",
+        "order_number",
+        "invoice_url",
+        "delivery_id",
+        "potential_order_id",
+        "order_type",
+        "can_change_slot",
+        "can_exchange",
+        "can_pay",
+        "can_cancel",
+        "can_apply_voucher",
+        "can_addon",
+        "display_payment_method",
+        "payment_method",
+        "payment_status",
+        "payment_status_message",
+        "order_id",
+        "items_count",
+        "display_status",
+        "status",
+        "voucher_code",
+        "voucher_type",
+        "voucher_amount",
+        "delivery_charge",
+        "free_delivery_reason",
+        "wallet_used",
+        "sub_total",
+        "final_total",
+        "contactless_delivery_charge",
+        "savings",
+        "food_total",
+        "credit_debit_message",
+        "is_express",
+        "is_addon",
+        "total_payable",
+        "addon_merged_status",
+        "addon_url",
+        "created_on",
+        "slot",
+        "eta",
+        "items",
+        "member",
+        "old_system_order",
+        "state",
+        "internal_payment_status",
+        "shop_more",
+        "lat",
+        "lon",
+        "actual_weight",
+        "normalised_weight",
+        "ec_id",
+        "order_modifications",
+        "sa_id",
+        "lmdfc_id",
+        "can_track_order"
+      ]
+    },
+    "modifications": {
+      "type": "array",
+      "items": {}
+    }
+  },
+  "required": [
+    "order",
+    "modifications"
+  ]
+}

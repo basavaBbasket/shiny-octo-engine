@@ -1,0 +1,724 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "member_info": {
+      "type": "null"
+    },
+    "selected_address_id": {
+      "type": "string"
+    },
+    "sa_list": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "sa_id": {
+              "type": "integer"
+            },
+            "dms": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "required": [
+            "sa_id",
+            "dms"
+          ]
+        }
+      ]
+    },
+    "bb_star_membership_info": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string"
+        },
+        "msg": {
+          "type": "string"
+        },
+        "is_city_bb_star_enabled": {
+          "type": "boolean"
+        },
+        "know_more_text": {
+          "type": "string"
+        },
+        "is_bb_star_member": {
+          "type": "boolean"
+        },
+        "show_priority_slot_msg": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "url",
+        "msg",
+        "is_city_bb_star_enabled",
+        "know_more_text",
+        "is_bb_star_member",
+        "show_priority_slot_msg"
+      ]
+    },
+    "special_notifications": {
+      "type": "object"
+    },
+    "ticker_info": {
+      "type": "object"
+    },
+    "additional_cookies": {
+      "type": "object",
+      "properties": {
+        "_bb_bb2.0": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "_bb_bb2.0"
+      ]
+    },
+    "addresses": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "nick": {
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            },
+            "lng": {
+              "type": "number"
+            },
+            "lat": {
+              "type": "number"
+            },
+            "pin": {
+              "type": "integer"
+            },
+            "address1": {
+              "type": "string"
+            },
+            "address2": {
+              "type": "string"
+            },
+            "area": {
+              "type": "string"
+            },
+            "sa_city_id": {
+              "type": "integer"
+            },
+            "city_name": {
+              "type": "string"
+            },
+            "city_id": {
+              "type": "integer"
+            },
+            "first_name": {
+              "type": "string"
+            },
+            "last_name": {
+              "type": "string"
+            },
+            "is_current_delivery": {
+              "type": "boolean"
+            },
+            "is_partial": {
+              "type": "boolean"
+            },
+            "is_default": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "nick",
+            "id",
+            "lng",
+            "lat",
+            "pin",
+            "address1",
+            "address2",
+            "area",
+            "sa_city_id",
+            "city_name",
+            "city_id",
+            "first_name",
+            "last_name",
+            "is_current_delivery",
+            "is_partial",
+            "is_default"
+          ]
+        }
+      ]
+    },
+    "door_ui": {
+      "type": "object",
+      "properties": {
+        "desc": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "desc",
+        "title"
+      ]
+    },
+    "entry_context_mapping": {
+      "type": "object",
+      "properties": {
+        "7": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "display_name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "slug",
+            "display_name"
+          ]
+        },
+        "8": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "display_name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "slug",
+            "display_name"
+          ]
+        },
+        "9": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "display_name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "slug",
+            "display_name"
+          ]
+        },
+        "10": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "display_name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "slug",
+            "display_name"
+          ]
+        },
+        "100": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "display_name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "slug",
+            "display_name"
+          ]
+        },
+        "101": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "display_name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "slug",
+            "display_name"
+          ]
+        },
+        "103": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "display_name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "slug",
+            "display_name"
+          ]
+        }
+      },
+      "required": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "100",
+        "101",
+        "103"
+      ]
+    },
+    "applicable_ec_doors_for_member": {
+      "type": "array",
+      "items": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    "next_available_slots": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "door_message": {
+              "type": "string"
+            },
+            "in_store_widget_message": {
+              "type": "string"
+            },
+            "entry_allowed": {
+              "type": "boolean"
+            },
+            "checkout_allowed": {
+              "type": "boolean"
+            },
+            "delay_delivery_message": {
+              "type": "string"
+            },
+            "order_eta_message": {
+              "type": "string"
+            },
+            "sa_id": {
+              "type": "integer"
+            },
+            "show_express": {
+              "type": "boolean"
+            },
+            "slot_start_timestamp": {
+              "type": "string"
+            },
+            "bb_star_avail": {
+              "type": "boolean"
+            },
+            "short_eta": {
+              "type": "string"
+            },
+            "medium_eta": {
+              "type": "string"
+            },
+            "long_eta": {
+              "type": "string"
+            },
+            "slot_time": {
+              "type": "string"
+            },
+            "slots_full": {
+              "type": "boolean"
+            },
+            "eta": {
+              "type": "integer"
+            },
+            "eta_message": {
+              "type": "string"
+            },
+            "rts_delay": {
+              "type": "integer"
+            },
+            "rts_delay_message": {
+              "type": "string"
+            },
+            "threshold_upper_limit": {
+              "type": "integer"
+            },
+            "threshold_lower_limit": {
+              "type": "integer"
+            },
+            "threshold_id": {
+              "type": "integer"
+            },
+            "threshold_name": {
+              "type": "string"
+            },
+            "dg_percentage": {
+              "type": "integer"
+            },
+            "dg_time_buffer": {
+              "type": "integer"
+            },
+            "eta_timestamp": {
+              "type": "string"
+            },
+            "image_url": {
+              "type": "string"
+            },
+            "store_open_time": {
+              "type": "string"
+            },
+            "store_close_time": {
+              "type": "string"
+            },
+            "show_eta": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "door_message",
+            "in_store_widget_message",
+            "entry_allowed",
+            "checkout_allowed",
+            "delay_delivery_message",
+            "order_eta_message",
+            "sa_id",
+            "show_express",
+            "slot_start_timestamp",
+            "bb_star_avail",
+            "short_eta",
+            "medium_eta",
+            "long_eta",
+            "slot_time",
+            "slots_full",
+            "eta",
+            "eta_message",
+            "rts_delay",
+            "rts_delay_message",
+            "threshold_upper_limit",
+            "threshold_lower_limit",
+            "threshold_id",
+            "threshold_name",
+            "dg_percentage",
+            "dg_time_buffer",
+            "eta_timestamp",
+            "image_url",
+            "store_open_time",
+            "store_close_time",
+            "show_eta"
+          ]
+        }
+      ]
+    },
+    "ec_doors": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "policy": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "view_all": {
+                  "type": "object",
+                  "properties": {
+                    "link": {
+                      "type": "string"
+                    },
+                    "text": {
+                      "type": "string"
+                    },
+                    "footer_label": {
+                      "type": "string"
+                    },
+                    "policy_messages": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "message": {
+                              "type": "string"
+                            },
+                            "policy_msg_icon_url": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "message",
+                            "policy_msg_icon_url"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "message": {
+                              "type": "string"
+                            },
+                            "policy_msg_icon_url": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "message",
+                            "policy_msg_icon_url"
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "link",
+                    "text",
+                    "footer_label",
+                    "policy_messages"
+                  ]
+                }
+              },
+              "required": [
+                "title",
+                "view_all"
+              ]
+            },
+            "id": {
+              "type": "integer"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "display_name": {
+              "type": "string"
+            },
+            "is_door_enabled": {
+              "type": "boolean"
+            },
+            "is_checkout_enabled": {
+              "type": "boolean"
+            },
+            "door_config": {
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "display_msg": {
+                  "type": "string"
+                },
+                "display_msg2": {
+                  "type": "string"
+                },
+                "app_behaviour": {
+                  "type": "string"
+                },
+                "door_icon_url": {
+                  "type": "string"
+                },
+                "door_closure_url": {
+                  "type": "string"
+                },
+                "toolbar_icon_url": {
+                  "type": "string"
+                },
+                "door_van_icon_url": {
+                  "type": "string"
+                },
+                "self_service_img_url": {
+                  "type": "string"
+                },
+                "eta_message": {
+                  "type": "string"
+                },
+                "store_closure_message": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "url",
+                "label",
+                "display_msg",
+                "display_msg2",
+                "app_behaviour",
+                "door_icon_url",
+                "door_closure_url",
+                "toolbar_icon_url",
+                "door_van_icon_url",
+                "self_service_img_url",
+                "eta_message",
+                "store_closure_message"
+              ]
+            }
+          },
+          "required": [
+            "policy",
+            "id",
+            "slug",
+            "display_name",
+            "is_door_enabled",
+            "is_checkout_enabled",
+            "door_config"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "policy": {
+              "type": "object"
+            },
+            "id": {
+              "type": "integer"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "display_name": {
+              "type": "string"
+            },
+            "is_door_enabled": {
+              "type": "boolean"
+            },
+            "is_checkout_enabled": {
+              "type": "boolean"
+            },
+            "door_config": {
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "display_msg": {
+                  "type": "string"
+                },
+                "display_msg2": {
+                  "type": "string"
+                },
+                "app_behaviour": {
+                  "type": "string"
+                },
+                "door_icon_url": {
+                  "type": "string"
+                },
+                "door_closure_url": {
+                  "type": "string"
+                },
+                "toolbar_icon_url": {
+                  "type": "string"
+                },
+                "door_van_icon_url": {
+                  "type": "string"
+                },
+                "self_service_img_url": {
+                  "type": "string"
+                },
+                "eta_message": {
+                  "type": "string"
+                },
+                "store_closure_message": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "url",
+                "label",
+                "display_msg",
+                "display_msg2",
+                "app_behaviour",
+                "door_icon_url",
+                "door_closure_url",
+                "toolbar_icon_url",
+                "door_van_icon_url",
+                "self_service_img_url",
+                "eta_message",
+                "store_closure_message"
+              ]
+            }
+          },
+          "required": [
+            "policy",
+            "id",
+            "slug",
+            "display_name",
+            "is_door_enabled",
+            "is_checkout_enabled",
+            "door_config"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "member_info",
+    "selected_address_id",
+    "sa_list",
+    "bb_star_membership_info",
+    "special_notifications",
+    "ticker_info",
+    "additional_cookies",
+    "addresses",
+    "door_ui",
+    "entry_context_mapping",
+    "applicable_ec_doors_for_member",
+    "next_available_slots",
+    "ec_doors"
+  ]
+}

@@ -1,0 +1,352 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "eta": {
+      "type": "object",
+      "properties": {
+        "order_eta_message": {
+          "type": "string"
+        },
+        "rts_delay": {
+          "type": "integer"
+        },
+        "threshold_lower_limit": {
+          "type": "integer"
+        },
+        "threshold_upper_limit": {
+          "type": "integer"
+        },
+        "threshold_name": {
+          "type": "string"
+        },
+        "threshold_id": {
+          "type": "integer"
+        },
+        "show_eta": {
+          "type": "boolean"
+        },
+        "dg_percentage": {
+          "type": "integer"
+        },
+        "dg_time_buffer": {
+          "type": "integer"
+        },
+        "eta_display_str": {
+          "type": "string"
+        },
+        "estimated_arrival": {
+          "type": "string"
+        },
+        "order_status_message": {
+          "type": "string"
+        },
+        "dg_message": {
+          "type": "string"
+        },
+        "dg_time": {
+          "type": "string"
+        },
+        "start_eta_polling": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "order_eta_message",
+        "rts_delay",
+        "threshold_lower_limit",
+        "threshold_upper_limit",
+        "threshold_name",
+        "threshold_id",
+        "show_eta",
+        "dg_percentage",
+        "dg_time_buffer",
+        "eta_display_str",
+        "estimated_arrival",
+        "order_status_message",
+        "dg_message",
+        "dg_time",
+        "start_eta_polling"
+      ]
+    },
+    "order": {
+      "type": "object",
+      "properties": {
+        "shipment_name": {
+          "type": "string"
+        },
+        "order_number": {
+          "type": "string"
+        },
+        "invoice_url": {
+          "type": "string"
+        },
+        "order_type": {
+          "type": "string"
+        },
+        "can_change_slot": {
+          "type": "boolean"
+        },
+        "can_exchange": {
+          "type": "boolean"
+        },
+        "can_pay": {
+          "type": "boolean"
+        },
+        "can_cancel": {
+          "type": "boolean"
+        },
+        "can_addon": {
+          "type": "boolean"
+        },
+        "display_payment_method": {
+          "type": "string"
+        },
+        "payment_method": {
+          "type": "string"
+        },
+        "order_id": {
+          "type": "string"
+        },
+        "items_count": {
+          "type": "integer"
+        },
+        "display_status": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "voucher_code": {
+          "type": "string"
+        },
+        "voucher_type": {
+          "type": "string"
+        },
+        "voucher_amount": {
+          "type": "string"
+        },
+        "delivery_charge": {
+          "type": "number"
+        },
+        "free_delivery_reason": {
+          "type": "string"
+        },
+        "wallet_used": {
+          "type": "string"
+        },
+        "sub_total": {
+          "type": "number"
+        },
+        "final_total": {
+          "type": "number"
+        },
+        "contactless_delivery_charge": {
+          "type": "number"
+        },
+        "savings": {
+          "type": "number"
+        },
+        "total_payable": {
+          "type": "number"
+        },
+        "created_on": {
+          "type": "string"
+        },
+        "old_system_order": {
+          "type": "boolean"
+        },
+        "internal_payment_status": {
+          "type": "string"
+        },
+        "actual_weight": {
+          "type": "null"
+        },
+        "normalised_weight": {
+          "type": "null"
+        },
+        "ec_id": {
+          "type": "integer"
+        },
+        "sa_id": {
+          "type": "integer"
+        },
+        "container_message": {
+          "type": "string"
+        },
+        "supported_order_status": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "required": [
+        "shipment_name",
+        "order_number",
+        "invoice_url",
+        "order_type",
+        "can_change_slot",
+        "can_exchange",
+        "can_pay",
+        "can_cancel",
+        "can_addon",
+        "display_payment_method",
+        "payment_method",
+        "order_id",
+        "items_count",
+        "display_status",
+        "status",
+        "voucher_code",
+        "voucher_type",
+        "voucher_amount",
+        "delivery_charge",
+        "free_delivery_reason",
+        "wallet_used",
+        "sub_total",
+        "final_total",
+        "contactless_delivery_charge",
+        "savings",
+        "total_payable",
+        "created_on",
+        "old_system_order",
+        "internal_payment_status",
+        "actual_weight",
+        "normalised_weight",
+        "ec_id",
+        "sa_id",
+        "container_message",
+        "supported_order_status"
+      ]
+    },
+    "payment": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string"
+        },
+        "payment_status_message": {
+          "type": "string"
+        },
+        "payment_status_title": {
+          "type": "string"
+        },
+        "retry_threshold": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "status",
+        "payment_status_message",
+        "payment_status_title",
+        "retry_threshold"
+      ]
+    },
+    "member": {
+      "type": "object",
+      "properties": {
+        "first_name": {
+          "type": "string"
+        },
+        "last_name": {
+          "type": "string"
+        },
+        "nick": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "city_name": {
+          "type": "string"
+        },
+        "address1": {
+          "type": "string"
+        },
+        "address2": {
+          "type": "string"
+        },
+        "complex": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string"
+        },
+        "landmark": {
+          "type": "string"
+        },
+        "lat": {
+          "type": "number"
+        },
+        "lng": {
+          "type": "number"
+        },
+        "pin": {
+          "type": "integer"
+        },
+        "actual_city_id": {
+          "type": "integer"
+        },
+        "city_id": {
+          "type": "integer"
+        },
+        "is_partial": {
+          "type": "boolean"
+        },
+        "is_default": {
+          "type": "boolean"
+        },
+        "contact_no": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "first_name",
+        "last_name",
+        "nick",
+        "id",
+        "city_name",
+        "address1",
+        "address2",
+        "complex",
+        "area",
+        "landmark",
+        "lat",
+        "lng",
+        "pin",
+        "actual_city_id",
+        "city_id",
+        "is_partial",
+        "is_default",
+        "contact_no"
+      ]
+    },
+    "polling_interval": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "eta",
+    "order",
+    "payment",
+    "member",
+    "polling_interval"
+  ]
+}
