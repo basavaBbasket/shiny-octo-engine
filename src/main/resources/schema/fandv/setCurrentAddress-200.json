@@ -1,0 +1,121 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "integer"
+    },
+    "message": {
+      "type": "string"
+    },
+    "response": {
+      "type": "object",
+      "properties": {
+        "cookies": {
+          "type": "object",
+          "properties": {
+            "_bb_loid": {
+              "type": "null"
+            },
+            "_bb_bhid": {
+              "type": "string"
+            },
+            "_bb_nhid": {
+              "type": "integer"
+            },
+            "_bb_dsevid": {
+              "type": "integer"
+            },
+            "_bb_dsid": {
+              "type": "integer"
+            },
+            "_bb_cid": {
+              "type": "integer"
+            },
+            "_bb_aid": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "_bb_loid",
+            "_bb_bhid",
+            "_bb_nhid",
+            "_bb_dsevid",
+            "_bb_dsid",
+            "_bb_cid",
+            "_bb_aid"
+          ]
+        },
+        "cart_info": {
+          "type": "object"
+        },
+        "addresses": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "is_partial": {
+                  "type": "boolean"
+                },
+                "pin": {
+                  "type": "integer"
+                },
+                "city_id": {
+                  "type": "integer"
+                },
+                "is_5k": {
+                  "type": "boolean"
+                },
+                "lat": {
+                  "type": "number"
+                },
+                "city_name": {
+                  "type": "string"
+                },
+                "lng": {
+                  "type": "number"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "area": {
+                  "type": "string"
+                },
+                "nick": {
+                  "type": "string"
+                },
+                "city_short_name": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "is_partial",
+                "pin",
+                "city_id",
+                "is_5k",
+                "lat",
+                "city_name",
+                "lng",
+                "id",
+                "area",
+                "nick",
+                "city_short_name"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "cookies",
+        "cart_info",
+        "addresses"
+      ]
+    }
+  },
+  "required": [
+    "status",
+    "message",
+    "response"
+  ]
+}

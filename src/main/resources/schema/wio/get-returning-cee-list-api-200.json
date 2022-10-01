@@ -1,0 +1,138 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "cee": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name"
+          ]
+        },
+        "sku_receiving": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "sku": {
+                  "type": "integer"
+                },
+                "sku_name": {
+                  "type": "string"
+                },
+                "quantity": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "sku",
+                "sku_name",
+                "quantity"
+              ]
+            }
+          ]
+        },
+        "container_receiving": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string"
+                },
+                "items": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "sku": {
+                          "type": "integer"
+                        },
+                        "sku_name": {
+                          "type": "string"
+                        },
+                        "quantity": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "sku",
+                        "sku_name",
+                        "quantity"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "sku": {
+                          "type": "integer"
+                        },
+                        "sku_name": {
+                          "type": "string"
+                        },
+                        "quantity": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "sku",
+                        "sku_name",
+                        "quantity"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "sku": {
+                          "type": "integer"
+                        },
+                        "sku_name": {
+                          "type": "string"
+                        },
+                        "quantity": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "sku",
+                        "sku_name",
+                        "quantity"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "label",
+                "items"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "cee",
+        "sku_receiving",
+        "container_receiving"
+      ]
+    }
+  ]
+}

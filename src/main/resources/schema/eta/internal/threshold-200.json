@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "dg_percentage": {
+      "type": "integer"
+    },
+    "dg_time_buffer": {
+      "type": "integer"
+    },
+    "id": {
+      "type": "integer"
+    },
+    "order_eta_message": {
+      "type": "string"
+    },
+    "delay_delivery_message": {
+      "type": "string"
+    },
+    "rts_delay": {
+      "type": "integer"
+    },
+    "rts_delay_message": {
+      "type": "string"
+    },
+    "show_eta": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "dg_percentage",
+    "dg_time_buffer",
+    "id",
+    "order_eta_message",
+    "delay_delivery_message",
+    "rts_delay",
+    "rts_delay_message",
+    "show_eta"
+  ]
+}

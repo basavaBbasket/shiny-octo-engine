@@ -1,0 +1,68 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!-- ************************************************************
+ 			TestNG file to define the suites to run
+-->
+<!--
+**********************************************************************
+
+		List of User Parameters required to pass in CLI to run the project
+
+**********************************************************************
+
+		# Mandatory Parameters
+		$ suiteName = prod|sanity|smoke
+		$ exclude = null
+		$ browser = firefox|chrome|IE
+		$ serverName = https://www.bigbasket.com
+		$ testngXml = testng.xml
+
+		#Additional Paramters
+		$ isScreenshotRequired = false
+		$ buildNumber = null
+		$ sendEmail = false
+		$ emailTo = qabot@bigbasket.com
+		$ gridMode = false(default)
+		$ threadCount = 5
+		$ adminId = xyz
+		$ adminPswd = abc
+		$ retryFailedTC = false
+
+ -->
+
+<suite name="BB2-Automation" verbose="2" data-provider-thread-count="2">
+    <listeners>
+        <listener class-name="com.bigbasket.automation.reports.AutomationReportListener"></listener>
+        <listener class-name="framework.testng.SuiteListener"></listener>
+        <listener class-name="framework.testng.RetryAnalyzer"></listener>
+    </listeners>
+    <test name="Api-Automation"  parallel="methods">
+
+        <!--
+         *********************************************************************
+         Beanshell script to define the suites/groups to run.
+         *********************************************************************
+         -->
+        <method-selectors>
+            <method-selector>
+                <script language="beanshell">
+                    <![CDATA[
+                    String exclude = System.getProperty("exclude","null");
+                	(!Collections.disjoint(groups.keySet(), Arrays.asList(System.getProperty("suiteName").split("\\s*,\\s*"))) && (!!Collections.disjoint(groups.keySet(), Arrays.asList(exclude.split("\\s*,\\s*")))));
+                	]]>
+                </script>
+            </method-selector>
+        </method-selectors>
+
+
+        <!--
+         *********************************************************************
+         Define the packages to be included(Run suite package wise.)
+         *********************************************************************
+         -->
+        <packages>
+            <package name=".*">
+            </package>
+        </packages>
+    </test>
+</suite>

@@ -1,0 +1,517 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "success": {
+      "type": "boolean"
+    },
+    "cee_id": {
+      "type": "integer"
+    },
+    "printing_otp": {
+      "type": "string"
+    },
+    "route_identifier_list": {
+      "type": "string"
+    },
+    "route_id": {
+      "type": "integer"
+    },
+    "current_time": {
+      "type": "integer"
+    },
+    "is_location_tracker_enabled": {
+      "type": "boolean"
+    },
+    "is_skip_enabled": {
+      "type": "boolean"
+    },
+    "use_repeated_orders": {
+      "type": "boolean"
+    },
+    "fsd_delay": {
+      "type": "object",
+      "properties": {
+        "is_fsd_enabled": {
+          "type": "boolean"
+        },
+        "phone_numbers": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "fsd_actions": {
+          "type": "object",
+          "properties": {
+            "map_view": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "slug": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "slug",
+                    "value"
+                  ]
+                }
+              ]
+            },
+            "order_summary_view": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "slug": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "slug",
+                    "value"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "slug": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "slug",
+                    "value"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "map_view",
+            "order_summary_view"
+          ]
+        },
+        "call_waiting_time": {
+          "type": "integer"
+        },
+        "cs_number": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "required": [
+        "is_fsd_enabled",
+        "phone_numbers",
+        "fsd_actions",
+        "call_waiting_time",
+        "cs_number"
+      ]
+    },
+    "order_details": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "customer_info": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "landmark": {
+                  "type": "string"
+                },
+                "landline": {
+                  "type": "string"
+                },
+                "mobile": {
+                  "type": "string"
+                },
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                },
+                "apartment_id": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "address",
+                "landmark",
+                "landline",
+                "mobile",
+                "latitude",
+                "longitude",
+                "apartment_id"
+              ]
+            },
+            "slot_id": {
+              "type": "integer"
+            },
+            "order_id": {
+              "type": "integer"
+            },
+            "bb_order_id": {
+              "type": "string"
+            },
+            "delivery_sequence": {
+              "type": "integer"
+            },
+            "eta": {
+              "type": "string"
+            },
+            "is_contactless": {
+              "type": "boolean"
+            },
+            "status": {
+              "type": "string"
+            },
+            "order_type": {
+              "type": "string"
+            },
+            "slot_start_time": {
+              "type": "string"
+            },
+            "slot_end_time": {
+              "type": "string"
+            },
+            "slot_label": {
+              "type": "string"
+            },
+            "slot_date": {
+              "type": "string"
+            },
+            "order_items": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "sl_no": {
+                      "type": "integer"
+                    },
+                    "sku_id": {
+                      "type": "integer"
+                    },
+                    "product": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "string"
+                    },
+                    "is_food": {
+                      "type": "boolean"
+                    },
+                    "brand": {
+                      "type": "string"
+                    },
+                    "mrp": {
+                      "type": "string"
+                    },
+                    "total": {
+                      "type": "string"
+                    },
+                    "pack_of": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "top_level_category": {
+                      "type": "string"
+                    },
+                    "type_order": {
+                      "type": "integer"
+                    },
+                    "topcat_order": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "sl_no",
+                    "sku_id",
+                    "product",
+                    "quantity",
+                    "is_food",
+                    "brand",
+                    "mrp",
+                    "total",
+                    "pack_of",
+                    "type",
+                    "top_level_category",
+                    "type_order",
+                    "topcat_order"
+                  ]
+                }
+              ]
+            },
+            "member_comment": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "customer_info",
+            "slot_id",
+            "order_id",
+            "bb_order_id",
+            "delivery_sequence",
+            "eta",
+            "is_contactless",
+            "status",
+            "order_type",
+            "slot_start_time",
+            "slot_end_time",
+            "slot_label",
+            "slot_date",
+            "order_items",
+            "member_comment"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "customer_info": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "landmark": {
+                  "type": "string"
+                },
+                "landline": {
+                  "type": "string"
+                },
+                "mobile": {
+                  "type": "string"
+                },
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                },
+                "apartment_id": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "address",
+                "landmark",
+                "landline",
+                "mobile",
+                "latitude",
+                "longitude",
+                "apartment_id"
+              ]
+            },
+            "slot_id": {
+              "type": "integer"
+            },
+            "order_id": {
+              "type": "integer"
+            },
+            "bb_order_id": {
+              "type": "string"
+            },
+            "delivery_sequence": {
+              "type": "integer"
+            },
+            "eta": {
+              "type": "string"
+            },
+            "is_contactless": {
+              "type": "boolean"
+            },
+            "status": {
+              "type": "string"
+            },
+            "order_type": {
+              "type": "string"
+            },
+            "slot_start_time": {
+              "type": "string"
+            },
+            "slot_end_time": {
+              "type": "string"
+            },
+            "slot_label": {
+              "type": "string"
+            },
+            "slot_date": {
+              "type": "string"
+            },
+            "order_items": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "sl_no": {
+                      "type": "integer"
+                    },
+                    "sku_id": {
+                      "type": "integer"
+                    },
+                    "product": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "string"
+                    },
+                    "is_food": {
+                      "type": "boolean"
+                    },
+                    "brand": {
+                      "type": "string"
+                    },
+                    "mrp": {
+                      "type": "string"
+                    },
+                    "total": {
+                      "type": "string"
+                    },
+                    "pack_of": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "top_level_category": {
+                      "type": "string"
+                    },
+                    "type_order": {
+                      "type": "integer"
+                    },
+                    "topcat_order": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "sl_no",
+                    "sku_id",
+                    "product",
+                    "quantity",
+                    "is_food",
+                    "brand",
+                    "mrp",
+                    "total",
+                    "pack_of",
+                    "type",
+                    "top_level_category",
+                    "type_order",
+                    "topcat_order"
+                  ]
+                }
+              ]
+            },
+            "order_value": {
+              "type": "string"
+            },
+            "to_collect": {
+              "type": "string"
+            },
+            "payment_type": {
+              "type": "string"
+            },
+            "max_voucher_payable": {
+              "type": "string"
+            },
+            "is_vip": {
+              "type": "boolean"
+            },
+            "otp": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "customer_info",
+            "slot_id",
+            "order_id",
+            "bb_order_id",
+            "delivery_sequence",
+            "eta",
+            "is_contactless",
+            "status",
+            "order_type",
+            "slot_start_time",
+            "slot_end_time",
+            "slot_label",
+            "slot_date",
+            "order_items",
+            "order_value",
+            "to_collect",
+            "payment_type",
+            "max_voucher_payable",
+            "is_vip",
+            "otp"
+          ]
+        }
+      ]
+    },
+    "dispatch_time": {
+      "type": "string"
+    },
+    "is_early_delivery_allowed": {
+      "type": "boolean"
+    },
+    "call_eretail_for_crate_info": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "success",
+    "cee_id",
+    "printing_otp",
+    "route_identifier_list",
+    "route_id",
+    "current_time",
+    "is_location_tracker_enabled",
+    "is_skip_enabled",
+    "use_repeated_orders",
+    "fsd_delay",
+    "order_details",
+    "dispatch_time",
+    "is_early_delivery_allowed",
+    "call_eretail_for_crate_info"
+  ]
+}

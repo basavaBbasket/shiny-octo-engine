@@ -1,0 +1,141 @@
+
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "message": {
+      "type": "null"
+    },
+    "id": {
+      "type": "integer"
+    },
+    "androidDeviceId": {
+      "type": "string"
+    },"storeId": {
+      "type": "integer"
+    },"brand": {
+      "type": "string"
+    },"model": {
+      "type": "string"
+    },"imei": {
+      "type": "string"
+    },"deviceName": {
+      "type": "string"
+    },"taskStatus": {
+      "type": "null"
+    },"storeName": {
+      "type": "string"
+    },"fcId": {
+      "type": "integer"
+    },"latitude": {
+      "type": "number"
+    },"longitude": {
+      "type": "number"
+    },"cityId": {
+      "type": "integer"
+    },
+    "mid": {
+      "type": "integer"
+    },"address1": {
+      "type": "string"
+    },"address2": {
+      "type": "string"
+    },"address3": {
+      "type": "string"
+    },"pincode": {
+      "type": "integer"
+    },"storeStatus": {
+      "type": "string"
+    },"terminalNumber": {
+      "type": "integer"
+    },
+    "saId": {
+      "type": "integer"
+    },
+    "offlineMemberInfo": {
+      "type": "object",
+      "properties": {
+        "externalMemberId": {
+          "type": "integer"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "mobileNo": {
+          "type": "string"
+        }
+      }
+    },
+    "offlineAddressInfo": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "number"
+        },
+        "lon": {
+          "type": "number"
+        },
+        "houseNo": {
+          "type": "string"
+        },
+        "apartmentName": {
+          "type": "string"
+        },
+        "pincode": {
+          "type": "integer"
+        },
+        "address1": {
+          "type": "string"
+        },
+        "landmark": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "addressNickname": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": [
+    "status",
+    "message",
+    "id",
+    "androidDeviceId",
+    "storeId",
+    "brand",
+    "model",
+    "imei",
+    "deviceName",
+    "taskStatus",
+    "storeName",
+    "fcId",
+    "latitude",
+    "longitude",
+    "cityId",
+    "mid",
+    "address1",
+    "address2",
+    "address3",
+    "pincode",
+    "storeStatus",
+    "terminalNumber",
+    "saId",
+    "offlineMemberInfo",
+    "offlineAddressInfo"
+  ]
+}

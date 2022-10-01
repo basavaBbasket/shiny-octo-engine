@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "order_id": {
+      "type": "integer"
+    },
+    "container_info": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "container_label": {
+              "type": "string"
+            },
+            "sku_items": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "sku_id": {
+                      "type": "integer"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "picked_by_id": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "sku_id",
+                    "quantity",
+                    "picked_by_id"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "container_label",
+            "sku_items"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "order_id",
+    "container_info"
+  ]
+}
