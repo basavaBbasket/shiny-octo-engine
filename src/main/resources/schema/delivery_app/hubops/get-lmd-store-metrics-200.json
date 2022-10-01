@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "eq_size": {
+      "type": "integer"
+    },
+    "bin_scan_delta": {
+      "type": "integer"
+    },
+    "roster_size": {
+      "type": "integer"
+    },
+    "cee_out_for_delivery": {
+      "type": "integer"
+    },
+    "shift_duration": {
+      "type": "integer"
+    },
+    "orders_delivered_recently": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "eq_size",
+    "bin_scan_delta",
+    "roster_size",
+    "cee_out_for_delivery",
+    "shift_duration",
+    "orders_delivered_recently"
+  ]
+}

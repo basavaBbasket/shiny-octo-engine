@@ -1,0 +1,168 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "total_qoh": {
+      "type": "number"
+    },
+    "primary_qoh": {
+      "type": "object",
+      "properties": {
+        "total_qoh": {
+          "type": "number"
+        },
+        "bins_qoh": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "bin_location": {
+                  "type": "string"
+                },
+                "quantity": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "bin_location",
+                "quantity"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "total_qoh",
+        "bins_qoh"
+      ]
+    },
+    "secondary_qoh": {
+      "type": "object",
+      "properties": {
+        "total_qoh": {
+          "type": "number"
+        },
+        "bins_qoh": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "bin_location": {
+                  "type": "string"
+                },
+                "quantity": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "bin_location",
+                "quantity"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "total_qoh",
+        "bins_qoh"
+      ]
+    },
+    "miscellaneous_qoh": {
+      "type": "object",
+      "properties": {
+        "total_qoh": {
+          "type": "number"
+        },
+        "bins_qoh": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "bin_location": {
+                  "type": "string"
+                },
+                "quantity": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "bin_location",
+                "quantity"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "total_qoh",
+        "bins_qoh"
+      ]
+    },
+    "return_qoh": {
+      "type": "object",
+      "properties": {
+        "total_qoh": {
+          "type": "number"
+        },
+        "bins_qoh": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "bin_location": {
+                  "type": "string"
+                },
+                "quantity": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "bin_location",
+                "quantity"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "total_qoh",
+        "bins_qoh"
+      ]
+    },
+    "unstacked_qoh": {
+      "type": "object",
+      "properties": {
+        "grn_qoh": {
+          "type": "integer"
+        },
+        "prn_ti_qoh": {
+          "type": "integer"
+        },
+        "rtv_ti_qoh": {
+          "type": "integer"
+        },
+        "manual_ti_qoh": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "grn_qoh",
+        "prn_ti_qoh",
+        "rtv_ti_qoh",
+        "manual_ti_qoh"
+      ]
+    }
+  },
+  "required": [
+    "total_qoh",
+    "primary_qoh",
+    "secondary_qoh",
+    "miscellaneous_qoh",
+    "return_qoh",
+    "unstacked_qoh"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "order_eta_in_mins": {
+      "type": "string"
+    },
+    "current_rider_latitude": {
+      "type": "string"
+    },
+    "current_rider_longitude": {
+      "type": "string"
+    },
+    "destination_latitude": {
+      "type": "string"
+    },
+    "destination_longitude": {
+      "type": "string"
+    },
+    "show_rider_tracking": {
+      "type": "boolean"
+    },
+    "order_eta_polling_interval_in_secs": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "order_eta_in_mins",
+    "current_rider_latitude",
+    "current_rider_longitude",
+    "destination_latitude",
+    "destination_longitude",
+    "show_rider_tracking",
+    "order_eta_polling_interval_in_secs"
+  ]
+}

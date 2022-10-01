@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "assigned_users": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "job_type": {
+              "type": "string"
+            },
+            "user_count": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "job_type",
+            "user_count"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "job_type": {
+              "type": "string"
+            },
+            "user_count": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "job_type",
+            "user_count"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "job_type": {
+              "type": "string"
+            },
+            "user_count": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "job_type",
+            "user_count"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "job_type": {
+              "type": "string"
+            },
+            "user_count": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "job_type",
+            "user_count"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "assigned_users"
+  ]
+}
