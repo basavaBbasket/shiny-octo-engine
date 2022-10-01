@@ -1,0 +1,133 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "eta": {
+          "type": "integer"
+        },
+        "eta_message": {
+          "type": "string"
+        },
+        "order_eta_message": {
+          "type": "string"
+        },
+        "delay_delivery_message": {
+          "type": "string"
+        },
+        "rts_delay": {
+          "type": "integer"
+        },
+        "rts_delay_message": {
+          "type": "string"
+        },
+        "threshold_lower_limit": {
+          "type": "integer"
+        },
+        "threshold_upper_limit": {
+          "type": "integer"
+        },
+        "threshold_name": {
+          "type": "string"
+        },
+        "threshold_id": {
+          "type": "integer"
+        },
+        "checkout_allowed": {
+          "type": "boolean"
+        },
+        "entry_allowed": {
+          "type": "boolean"
+        },
+        "dg_percentage": {
+          "type": "integer"
+        },
+        "dg_time_buffer": {
+          "type": "integer"
+        },
+        "eta_timestamp": {
+          "type": "string"
+        },
+        "sa_id": {
+          "type": "integer"
+        },
+        "show_express": {
+          "type": "boolean"
+        },
+        "slot_start_timestamp": {
+          "type": "string"
+        },
+        "bb_star_avail": {
+          "type": "boolean"
+        },
+        "short_eta": {
+          "type": "string"
+        },
+        "medium_eta": {
+          "type": "string"
+        },
+        "long_eta": {
+          "type": "string"
+        },
+        "slot_time": {
+          "type": "string"
+        },
+        "slots_full": {
+          "type": "boolean"
+        },
+        "door_message": {
+          "type": "string"
+        },
+        "in_store_widget_message": {
+          "type": "string"
+        },
+        "image_url": {
+          "type": "string"
+        },
+        "store_open_time": {
+          "type": "string"
+        },
+        "store_close_time": {
+          "type": "string"
+        },
+        "show_eta": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "eta",
+        "eta_message",
+        "order_eta_message",
+        "delay_delivery_message",
+        "rts_delay",
+        "rts_delay_message",
+        "threshold_lower_limit",
+        "threshold_upper_limit",
+        "threshold_name",
+        "threshold_id",
+        "checkout_allowed",
+        "entry_allowed",
+        "dg_percentage",
+        "dg_time_buffer",
+        "eta_timestamp",
+        "sa_id",
+        "show_express",
+        "slot_start_timestamp",
+        "bb_star_avail",
+        "short_eta",
+        "medium_eta",
+        "long_eta",
+        "slot_time",
+        "slots_full",
+        "door_message",
+        "in_store_widget_message",
+        "image_url",
+        "store_open_time",
+        "store_close_time",
+        "show_eta"
+      ]
+    }
+  ]
+}

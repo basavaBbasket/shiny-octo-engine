@@ -1,0 +1,201 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "order": {
+      "type": "object",
+      "properties": {
+        "items_count": {
+          "type": "integer"
+        },
+        "voucher_amount": {
+          "type": "string"
+        },
+        "delivery_charge": {
+          "type": "integer"
+        },
+        "wallet_used": {
+          "type": "string"
+        },
+        "sub_total": {
+          "type": "integer"
+        },
+        "final_total": {
+          "type": "integer"
+        },
+        "savings": {
+          "type": "integer"
+        },
+        "total_payable": {
+          "type": "integer"
+        },
+        "status": {
+          "type": "string"
+        },
+        "container_ids": {
+          "type": "array",
+          "items": {}
+        },
+        "created_on": {
+          "type": "string"
+        },
+        "container_message": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "items_count",
+        "voucher_amount",
+        "delivery_charge",
+        "wallet_used",
+        "sub_total",
+        "final_total",
+        "savings",
+        "total_payable",
+        "status",
+        "container_ids",
+        "created_on",
+        "container_message"
+      ]
+    },
+    "payment": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string"
+        },
+        "payment_status_message": {
+          "type": "string"
+        },
+        "retry_threshold": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "status",
+        "payment_status_message",
+        "retry_threshold"
+      ]
+    },
+    "eta": {
+      "type": "object",
+      "properties": {
+        "eta_display_str": {
+          "type": "string"
+        },
+        "estimated_arrival": {
+          "type": "string"
+        },
+        "show_eta": {
+          "type": "boolean"
+        },
+        "dg_time": {
+          "type": "string"
+        },
+        "dg_message": {
+          "type": "string"
+        },
+        "order_status_message": {
+          "type": "string"
+        },
+        "order_eta_message": {
+          "type": "string"
+        },
+        "order_delivery_message": {
+          "type": "string"
+        },
+        "order_delayed_delivery_message": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "eta_display_str",
+        "estimated_arrival",
+        "show_eta",
+        "dg_time",
+        "dg_message",
+        "order_status_message",
+        "order_eta_message",
+        "order_delivery_message",
+        "order_delayed_delivery_message"
+      ]
+    },
+    "cee": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "vaccination_status": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "id",
+        "vaccination_status"
+      ]
+    },
+    "member": {
+      "type": "object",
+      "properties": {
+        "contact_number": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "area": {
+          "type": "string"
+        },
+        "address1": {
+          "type": "string"
+        },
+        "address2": {
+          "type": "string"
+        },
+        "pin": {
+          "type": "integer"
+        },
+        "residential_complex": {
+          "type": "string"
+        },
+        "first_name": {
+          "type": "string"
+        },
+        "landmark": {
+          "type": "string"
+        },
+        "nick": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "contact_number",
+        "city",
+        "area",
+        "address1",
+        "address2",
+        "pin",
+        "residential_complex",
+        "first_name",
+        "landmark",
+        "nick"
+      ]
+    },
+    "polling_interval": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "order",
+    "payment",
+    "eta",
+    "cee",
+    "member",
+    "polling_interval"
+  ]
+}
