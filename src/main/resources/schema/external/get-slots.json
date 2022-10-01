@@ -1,0 +1,481 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+    {
+      "status": 0,
+      "message": "success",
+      "response": {
+        "shipment_groups": [
+          {
+            "shipments": [
+              {
+                "fulfillment_type": "darkstore-express",
+                "shipment_type": "full",
+                "items_info": [
+                  {
+                    "partner_prod_id": 100942696,
+                    "quantity": 3
+                  }
+                ],
+                "slots": [
+                  {
+                    "capacity": 0,
+                    "from_time": "07:00:00",
+                    "to_time": "19:00:00",
+                    "available": false,
+                    "blocked": false,
+                    "slot_id": 2151,
+                    "slot_date": "31-05-20"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "required": [
+    "status",
+    "message",
+    "response"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "status": {
+      "$id": "#/properties/status",
+      "type": "integer",
+      "title": "The status schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "message": {
+      "$id": "#/properties/message",
+      "type": "string",
+      "title": "The message schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "success"
+      ]
+    },
+    "response": {
+      "$id": "#/properties/response",
+      "type": "object",
+      "title": "The response schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "shipment_groups": [
+            {
+              "shipments": [
+                {
+                  "fulfillment_type": "darkstore-express",
+                  "shipment_type": "full",
+                  "items_info": [
+                    {
+                      "partner_prod_id": 100942696,
+                      "quantity": 3
+                    }
+                  ],
+                  "slots": [
+                    {
+                      "capacity": 0,
+                      "from_time": "07:00:00",
+                      "to_time": "19:00:00",
+                      "available": false,
+                      "blocked": false,
+                      "slot_id": 2151,
+                      "slot_date": "31-05-20"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "required": [
+        "shipment_groups"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "shipment_groups": {
+          "$id": "#/properties/response/properties/shipment_groups",
+          "type": "array",
+          "title": "The shipment_groups schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              {
+                "shipments": [
+                  {
+                    "fulfillment_type": "darkstore-express",
+                    "shipment_type": "full",
+                    "items_info": [
+                      {
+                        "partner_prod_id": 100942696,
+                        "quantity": 3
+                      }
+                    ],
+                    "slots": [
+                      {
+                        "capacity": 0,
+                        "from_time": "07:00:00",
+                        "to_time": "19:00:00",
+                        "available": false,
+                        "blocked": false,
+                        "slot_id": 2151,
+                        "slot_date": "31-05-20"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "anyOf": [
+              {
+                "$id": "#/properties/response/properties/shipment_groups/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "shipments": [
+                      {
+                        "fulfillment_type": "darkstore-express",
+                        "shipment_type": "full",
+                        "items_info": [
+                          {
+                            "partner_prod_id": 100942696,
+                            "quantity": 3
+                          }
+                        ],
+                        "slots": [
+                          {
+                            "capacity": 0,
+                            "from_time": "07:00:00",
+                            "to_time": "19:00:00",
+                            "available": false,
+                            "blocked": false,
+                            "slot_id": 2151,
+                            "slot_date": "31-05-20"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "required": [
+                  "shipments"
+                ],
+                "additionalProperties": true,
+                "properties": {
+                  "shipments": {
+                    "$id": "#/properties/response/properties/shipment_groups/items/anyOf/0/properties/shipments",
+                    "type": "array",
+                    "title": "The shipments schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                      [
+                        {
+                          "fulfillment_type": "darkstore-express",
+                          "shipment_type": "full",
+                          "items_info": [
+                            {
+                              "partner_prod_id": 100942696,
+                              "quantity": 3
+                            }
+                          ],
+                          "slots": [
+                            {
+                              "capacity": 0,
+                              "from_time": "07:00:00",
+                              "to_time": "19:00:00",
+                              "available": false,
+                              "blocked": false,
+                              "slot_id": 2151,
+                              "slot_date": "31-05-20"
+                            }
+                          ]
+                        }
+                      ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                      "anyOf": [
+                        {
+                          "$id": "#/properties/response/properties/shipment_groups/items/anyOf/0/properties/shipments/items/anyOf/0",
+                          "type": "object",
+                          "title": "The first anyOf schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": {},
+                          "examples": [
+                            {
+                              "fulfillment_type": "darkstore-express",
+                              "shipment_type": "full",
+                              "items_info": [
+                                {
+                                  "partner_prod_id": 100942696,
+                                  "quantity": 3
+                                }
+                              ],
+                              "slots": [
+                                {
+                                  "capacity": 0,
+                                  "from_time": "07:00:00",
+                                  "to_time": "19:00:00",
+                                  "available": false,
+                                  "blocked": false,
+                                  "slot_id": 2151,
+                                  "slot_date": "31-05-20"
+                                }
+                              ]
+                            }
+                          ],
+                          "required": [
+                            "fulfillment_type",
+                            "shipment_type",
+                            "items_info",
+                            "slots"
+                          ],
+                          "additionalProperties": true,
+                          "properties": {
+                            "fulfillment_type": {
+                              "$id": "#/properties/response/properties/shipment_groups/items/anyOf/0/properties/shipments/items/anyOf/0/properties/fulfillment_type",
+                              "type": "string",
+                              "title": "The fulfillment_type schema",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": "",
+                              "examples": [
+                                "darkstore-express"
+                              ]
+                            },
+                            "shipment_type": {
+                              "$id": "#/properties/response/properties/shipment_groups/items/anyOf/0/properties/shipments/items/anyOf/0/properties/shipment_type",
+                              "type": "string",
+                              "title": "The shipment_type schema",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": "",
+                              "examples": [
+                                "full"
+                              ]
+                            },
+                            "items_info": {
+                              "$id": "#/properties/response/properties/shipment_groups/items/anyOf/0/properties/shipments/items/anyOf/0/properties/items_info",
+                              "type": "array",
+                              "title": "The items_info schema",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": [],
+                              "examples": [
+                                [
+                                  {
+                                    "partner_prod_id": 100942696,
+                                    "quantity": 3
+                                  }
+                                ]
+                              ],
+                              "additionalItems": true,
+                              "items": {
+                                "anyOf": [
+                                  {
+                                    "$id": "#/properties/response/properties/shipment_groups/items/anyOf/0/properties/shipments/items/anyOf/0/properties/items_info/items/anyOf/0",
+                                    "type": "object",
+                                    "title": "The first anyOf schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": {},
+                                    "examples": [
+                                      {
+                                        "partner_prod_id": 100942696,
+                                        "quantity": 3
+                                      }
+                                    ],
+                                    "required": [
+                                      "partner_prod_id",
+                                      "quantity"
+                                    ],
+                                    "additionalProperties": true,
+                                    "properties": {
+                                      "partner_prod_id": {
+                                        "$id": "#/properties/response/properties/shipment_groups/items/anyOf/0/properties/shipments/items/anyOf/0/properties/items_info/items/anyOf/0/properties/partner_prod_id",
+                                        "type": "integer",
+                                        "title": "The partner_prod_id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                          100942696
+                                        ]
+                                      },
+                                      "quantity": {
+                                        "$id": "#/properties/response/properties/shipment_groups/items/anyOf/0/properties/shipments/items/anyOf/0/properties/items_info/items/anyOf/0/properties/quantity",
+                                        "type": "integer",
+                                        "title": "The quantity schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                          3
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "$id": "#/properties/response/properties/shipment_groups/items/anyOf/0/properties/shipments/items/anyOf/0/properties/items_info/items"
+                              }
+                            },
+                            "slots": {
+                              "$id": "#/properties/response/properties/shipment_groups/items/anyOf/0/properties/shipments/items/anyOf/0/properties/slots",
+                              "type": "array",
+                              "title": "The slots schema",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": [],
+                              "examples": [
+                                [
+                                  {
+                                    "capacity": 0,
+                                    "from_time": "07:00:00",
+                                    "to_time": "19:00:00",
+                                    "available": false,
+                                    "blocked": false,
+                                    "slot_id": 2151,
+                                    "slot_date": "31-05-20"
+                                  }
+                                ]
+                              ],
+                              "additionalItems": true,
+                              "items": {
+                                "anyOf": [
+                                  {
+                                    "$id": "#/properties/response/properties/shipment_groups/items/anyOf/0/properties/shipments/items/anyOf/0/properties/slots/items/anyOf/0",
+                                    "type": "object",
+                                    "title": "The first anyOf schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": {},
+                                    "examples": [
+                                      {
+                                        "capacity": 0,
+                                        "from_time": "07:00:00",
+                                        "to_time": "19:00:00",
+                                        "available": false,
+                                        "blocked": false,
+                                        "slot_id": 2151,
+                                        "slot_date": "31-05-20"
+                                      }
+                                    ],
+                                    "required": [
+                                      "capacity",
+                                      "from_time",
+                                      "to_time",
+                                      "available",
+                                      "blocked",
+                                      "slot_id",
+                                      "slot_date"
+                                    ],
+                                    "additionalProperties": true,
+                                    "properties": {
+                                      "capacity": {
+                                        "$id": "#/properties/response/properties/shipment_groups/items/anyOf/0/properties/shipments/items/anyOf/0/properties/slots/items/anyOf/0/properties/capacity",
+                                        "type": "integer",
+                                        "title": "The capacity schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                          0
+                                        ]
+                                      },
+                                      "from_time": {
+                                        "$id": "#/properties/response/properties/shipment_groups/items/anyOf/0/properties/shipments/items/anyOf/0/properties/slots/items/anyOf/0/properties/from_time",
+                                        "type": "string",
+                                        "title": "The from_time schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                          "07:00:00"
+                                        ]
+                                      },
+                                      "to_time": {
+                                        "$id": "#/properties/response/properties/shipment_groups/items/anyOf/0/properties/shipments/items/anyOf/0/properties/slots/items/anyOf/0/properties/to_time",
+                                        "type": "string",
+                                        "title": "The to_time schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                          "19:00:00"
+                                        ]
+                                      },
+                                      "available": {
+                                        "$id": "#/properties/response/properties/shipment_groups/items/anyOf/0/properties/shipments/items/anyOf/0/properties/slots/items/anyOf/0/properties/available",
+                                        "type": "boolean",
+                                        "title": "The available schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": false,
+                                        "examples": [
+                                          false
+                                        ]
+                                      },
+                                      "blocked": {
+                                        "$id": "#/properties/response/properties/shipment_groups/items/anyOf/0/properties/shipments/items/anyOf/0/properties/slots/items/anyOf/0/properties/blocked",
+                                        "type": "boolean",
+                                        "title": "The blocked schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": false,
+                                        "examples": [
+                                          false
+                                        ]
+                                      },
+                                      "slot_id": {
+                                        "$id": "#/properties/response/properties/shipment_groups/items/anyOf/0/properties/shipments/items/anyOf/0/properties/slots/items/anyOf/0/properties/slot_id",
+                                        "type": "integer",
+                                        "title": "The slot_id schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                          2151
+                                        ]
+                                      },
+                                      "slot_date": {
+                                        "$id": "#/properties/response/properties/shipment_groups/items/anyOf/0/properties/shipments/items/anyOf/0/properties/slots/items/anyOf/0/properties/slot_date",
+                                        "type": "string",
+                                        "title": "The slot_date schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                          "31-05-20"
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "$id": "#/properties/response/properties/shipment_groups/items/anyOf/0/properties/shipments/items/anyOf/0/properties/slots/items"
+                              }
+                            }
+                          }
+                        }
+                      ],
+                      "$id": "#/properties/response/properties/shipment_groups/items/anyOf/0/properties/shipments/items"
+                    }
+                  }
+                }
+              }
+            ],
+            "$id": "#/properties/response/properties/shipment_groups/items"
+          }
+        }
+      }
+    }
+  }
+}

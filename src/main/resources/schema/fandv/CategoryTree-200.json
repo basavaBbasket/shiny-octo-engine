@@ -1,0 +1,950 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "base_url": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            },
+            "level": {
+              "type": "integer"
+            },
+            "children": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "slug": {
+                      "type": "string"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "level": {
+                      "type": "integer"
+                    },
+                    "children": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "integer"
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "slug": {
+                              "type": "string"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "level": {
+                              "type": "integer"
+                            },
+                            "children": {
+                              "type": "array",
+                              "items": {}
+                            },
+                            "dest_type": {
+                              "type": "string"
+                            },
+                            "dest_slug": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "name",
+                            "slug",
+                            "url",
+                            "level",
+                            "children",
+                            "dest_type",
+                            "dest_slug"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "integer"
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "slug": {
+                              "type": "string"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "level": {
+                              "type": "integer"
+                            },
+                            "children": {
+                              "type": "array",
+                              "items": {}
+                            },
+                            "dest_type": {
+                              "type": "string"
+                            },
+                            "dest_slug": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "name",
+                            "slug",
+                            "url",
+                            "level",
+                            "children",
+                            "dest_type",
+                            "dest_slug"
+                          ]
+                        }
+                      ]
+                    },
+                    "dest_type": {
+                      "type": "string"
+                    },
+                    "dest_slug": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "slug",
+                    "url",
+                    "level",
+                    "children",
+                    "dest_type",
+                    "dest_slug"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "slug": {
+                      "type": "string"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "level": {
+                      "type": "integer"
+                    },
+                    "children": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "integer"
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "slug": {
+                              "type": "string"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "level": {
+                              "type": "integer"
+                            },
+                            "children": {
+                              "type": "array",
+                              "items": {}
+                            },
+                            "dest_type": {
+                              "type": "string"
+                            },
+                            "dest_slug": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "name",
+                            "slug",
+                            "url",
+                            "level",
+                            "children",
+                            "dest_type",
+                            "dest_slug"
+                          ]
+                        }
+                      ]
+                    },
+                    "dest_type": {
+                      "type": "string"
+                    },
+                    "dest_slug": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "slug",
+                    "url",
+                    "level",
+                    "children",
+                    "dest_type",
+                    "dest_slug"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "slug": {
+                      "type": "string"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "level": {
+                      "type": "integer"
+                    },
+                    "children": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "integer"
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "slug": {
+                              "type": "string"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "level": {
+                              "type": "integer"
+                            },
+                            "children": {
+                              "type": "array",
+                              "items": {}
+                            },
+                            "dest_type": {
+                              "type": "string"
+                            },
+                            "dest_slug": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "name",
+                            "slug",
+                            "url",
+                            "level",
+                            "children",
+                            "dest_type",
+                            "dest_slug"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "integer"
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "slug": {
+                              "type": "string"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "level": {
+                              "type": "integer"
+                            },
+                            "children": {
+                              "type": "array",
+                              "items": {}
+                            },
+                            "dest_type": {
+                              "type": "string"
+                            },
+                            "dest_slug": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "name",
+                            "slug",
+                            "url",
+                            "level",
+                            "children",
+                            "dest_type",
+                            "dest_slug"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "integer"
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "slug": {
+                              "type": "string"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "level": {
+                              "type": "integer"
+                            },
+                            "children": {
+                              "type": "array",
+                              "items": {}
+                            },
+                            "dest_type": {
+                              "type": "string"
+                            },
+                            "dest_slug": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "name",
+                            "slug",
+                            "url",
+                            "level",
+                            "children",
+                            "dest_type",
+                            "dest_slug"
+                          ]
+                        }
+                      ]
+                    },
+                    "dest_type": {
+                      "type": "string"
+                    },
+                    "dest_slug": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "slug",
+                    "url",
+                    "level",
+                    "children",
+                    "dest_type",
+                    "dest_slug"
+                  ]
+                }
+              ]
+            },
+            "dest_type": {
+              "type": "string"
+            },
+            "dest_slug": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "slug",
+            "url",
+            "level",
+            "children",
+            "dest_type",
+            "dest_slug"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            },
+            "level": {
+              "type": "integer"
+            },
+            "children": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "slug": {
+                      "type": "string"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "level": {
+                      "type": "integer"
+                    },
+                    "children": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "integer"
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "slug": {
+                              "type": "string"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "level": {
+                              "type": "integer"
+                            },
+                            "children": {
+                              "type": "array",
+                              "items": {}
+                            },
+                            "dest_type": {
+                              "type": "string"
+                            },
+                            "dest_slug": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "name",
+                            "slug",
+                            "url",
+                            "level",
+                            "children",
+                            "dest_type",
+                            "dest_slug"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "integer"
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "slug": {
+                              "type": "string"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "level": {
+                              "type": "integer"
+                            },
+                            "children": {
+                              "type": "array",
+                              "items": {}
+                            },
+                            "dest_type": {
+                              "type": "string"
+                            },
+                            "dest_slug": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "name",
+                            "slug",
+                            "url",
+                            "level",
+                            "children",
+                            "dest_type",
+                            "dest_slug"
+                          ]
+                        }
+                      ]
+                    },
+                    "dest_type": {
+                      "type": "string"
+                    },
+                    "dest_slug": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "slug",
+                    "url",
+                    "level",
+                    "children",
+                    "dest_type",
+                    "dest_slug"
+                  ]
+                }
+              ]
+            },
+            "dest_type": {
+              "type": "string"
+            },
+            "dest_slug": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "slug",
+            "url",
+            "level",
+            "children",
+            "dest_type",
+            "dest_slug"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            },
+            "level": {
+              "type": "integer"
+            },
+            "children": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "slug": {
+                      "type": "string"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "level": {
+                      "type": "integer"
+                    },
+                    "children": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "integer"
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "slug": {
+                              "type": "string"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "level": {
+                              "type": "integer"
+                            },
+                            "children": {
+                              "type": "array",
+                              "items": {}
+                            },
+                            "dest_type": {
+                              "type": "string"
+                            },
+                            "dest_slug": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "name",
+                            "slug",
+                            "url",
+                            "level",
+                            "children",
+                            "dest_type",
+                            "dest_slug"
+                          ]
+                        }
+                      ]
+                    },
+                    "dest_type": {
+                      "type": "string"
+                    },
+                    "dest_slug": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "slug",
+                    "url",
+                    "level",
+                    "children",
+                    "dest_type",
+                    "dest_slug"
+                  ]
+                }
+              ]
+            },
+            "dest_type": {
+              "type": "string"
+            },
+            "dest_slug": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "slug",
+            "url",
+            "level",
+            "children",
+            "dest_type",
+            "dest_slug"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            },
+            "level": {
+              "type": "integer"
+            },
+            "children": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "slug": {
+                      "type": "string"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "level": {
+                      "type": "integer"
+                    },
+                    "children": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "integer"
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "slug": {
+                              "type": "string"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "level": {
+                              "type": "integer"
+                            },
+                            "children": {
+                              "type": "array",
+                              "items": {}
+                            },
+                            "dest_type": {
+                              "type": "string"
+                            },
+                            "dest_slug": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "name",
+                            "slug",
+                            "url",
+                            "level",
+                            "children",
+                            "dest_type",
+                            "dest_slug"
+                          ]
+                        }
+                      ]
+                    },
+                    "dest_type": {
+                      "type": "string"
+                    },
+                    "dest_slug": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "slug",
+                    "url",
+                    "level",
+                    "children",
+                    "dest_type",
+                    "dest_slug"
+                  ]
+                }
+              ]
+            },
+            "dest_type": {
+              "type": "string"
+            },
+            "dest_slug": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "slug",
+            "url",
+            "level",
+            "children",
+            "dest_type",
+            "dest_slug"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "slug": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            },
+            "level": {
+              "type": "integer"
+            },
+            "children": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "slug": {
+                      "type": "string"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "level": {
+                      "type": "integer"
+                    },
+                    "children": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "integer"
+                            },
+                            "name": {
+                              "type": "string"
+                            },
+                            "slug": {
+                              "type": "string"
+                            },
+                            "url": {
+                              "type": "string"
+                            },
+                            "level": {
+                              "type": "integer"
+                            },
+                            "children": {
+                              "type": "array",
+                              "items": {}
+                            },
+                            "dest_type": {
+                              "type": "string"
+                            },
+                            "dest_slug": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "name",
+                            "slug",
+                            "url",
+                            "level",
+                            "children",
+                            "dest_type",
+                            "dest_slug"
+                          ]
+                        }
+                      ]
+                    },
+                    "dest_type": {
+                      "type": "string"
+                    },
+                    "dest_slug": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "name",
+                    "slug",
+                    "url",
+                    "level",
+                    "children",
+                    "dest_type",
+                    "dest_slug"
+                  ]
+                }
+              ]
+            },
+            "dest_type": {
+              "type": "string"
+            },
+            "dest_slug": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "slug",
+            "url",
+            "level",
+            "children",
+            "dest_type",
+            "dest_slug"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "base_url",
+    "categories"
+  ]
+}

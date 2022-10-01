@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "alert_id": {
+          "type": "integer"
+        },
+        "alert_type": {
+          "type": "string"
+        },
+        "alert_info": {
+          "type": "object",
+          "properties": {
+            "message": {
+              "type": "string"
+            },
+            "meta": {
+              "type": "object",
+              "properties": {
+                "store_id": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "store_id"
+              ]
+            }
+          },
+          "required": [
+            "message",
+            "meta"
+          ]
+        },
+        "job_id": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "alert_id",
+        "alert_type",
+        "alert_info",
+        "job_id"
+      ]
+    }
+  ]
+}

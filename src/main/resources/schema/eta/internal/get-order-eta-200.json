@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "order_eta_in_mins": {
+      "type": "integer"
+    },
+    "order_eta_str_in_mins": {
+      "type": "string"
+    },
+    "store_latitude": {
+      "type": "string"
+    },
+    "store_longitude": {
+      "type": "string"
+    },
+    "current_rider_latitude": {
+      "type": "string"
+    },
+    "current_rider_longitude": {
+      "type": "string"
+    },
+    "destination_latitude": {
+      "type": "string"
+    },
+    "destination_longitude": {
+      "type": "string"
+    },
+    "show_eta": {
+      "type": "boolean"
+    },
+    "show_rider_tracking": {
+      "type": "boolean"
+    },
+    "eta_display_str": {
+      "type": "string"
+    },
+    "order_eta_polling_interval_in_secs": {
+      "type": "integer"
+    },
+    "send_route_lag_flag_interval_in_secs": {
+      "type": "integer"
+    },
+    "show_map": {
+      "type": "boolean"
+    },
+    "show_live_location_updates_on_map": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "order_eta_in_mins",
+    "order_eta_str_in_mins",
+    "store_latitude",
+    "store_longitude",
+    "current_rider_latitude",
+    "current_rider_longitude",
+    "destination_latitude",
+    "destination_longitude",
+    "show_eta",
+    "show_rider_tracking",
+    "eta_display_str",
+    "order_eta_polling_interval_in_secs",
+    "send_route_lag_flag_interval_in_secs",
+    "show_map",
+    "show_live_location_updates_on_map"
+  ]
+}

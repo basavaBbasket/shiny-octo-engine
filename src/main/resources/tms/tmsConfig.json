@@ -1,0 +1,46 @@
+{
+  "qas":{
+    "entry_context": "tatacroma",
+    "entry_context_id": 1,
+    "originContext": 1,
+    "max_slot_count": 10,
+    "max_slot_days": 3,
+    "lmd_fc_id": 1,
+    "default_dm_info": {
+      "id": 1,
+      "name": "van"
+    },
+    "payment_method": "cod",
+    "skuDetails":
+      {
+        "picking_path_id": 1,
+        "sku": 900455646,
+        "mrp": "50.00",
+        "sp": "40.0",
+        "quantity": 2.0,
+        "shipment_charge": "10.00",
+        "reason_id": 0,
+        "external_product_id": "C900455646"
+      },
+    "address": {
+      "external_address_id": 2130212,
+      "lat": "11.34",
+      "lon": "78.34",
+      "house_no": "1",
+      "apartment_name": "apartment",
+      "area": "Ayanambakkam",
+      "pincode": "401101",
+      "address1": "123",
+      "landmark": "",
+      "city": "Mumbai",
+      "address_nickname": "bb2.0 address"
+    },
+    "member": {
+      "external_member_id": 1021201,
+      "first_name": "Bigbasketer",
+      "last_name": "Bigbasketer",
+      "email": "Bigbasketer10021@gmail.com",
+      "mobile_no": "4000001003"
+    }
+  }
+}

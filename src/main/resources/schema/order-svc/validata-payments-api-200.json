@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "payment_details": {
+      "type": "object",
+      "properties": {
+        "payment_method": {
+          "type": "string"
+        },
+        "payment_status": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "validate_payment_message": {
+          "type": "string"
+        },
+        "polling_interval": {
+          "type": "integer"
+        },
+        "polling_timeout": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "payment_method",
+        "payment_status",
+        "status",
+        "validate_payment_message",
+        "polling_interval",
+        "polling_timeout"
+      ]
+    },
+    "txn_type": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "payment_details",
+    "txn_type"
+  ]
+}
